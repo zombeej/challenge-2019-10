@@ -18,6 +18,8 @@ Birthed out of our Slack org, The Reformed Devs have begun monthly coding challe
 
 Given a set of *n* letters, what is the highest scoring valid word that you can make using the set? Scoring is based on Scrabble letter point values (see `data/letters.json`). Word validity will be based on a dictionary included in the repo (`data/dictionary.txt`).
 
+Inputs will be given as a lowercase string. Dictionary file is all lowercase as well.
+
 Examples:
 
 Given the input letters `abc` your max score would be 7. A=1, B=3, C=3, and there are multiple words that can be formed using all letters.
@@ -27,6 +29,7 @@ Given the letters `iisq`, your max score would be 10. I=1, S=1, Q=10, and none o
 #### Output
 
 Running your solution should output your info in the following format: `username, language, word formed, solution, time in ms, notes`.
+
 Using the first example from above, example output might be: `specs, Python3, cab, 7, 130, these are the notes`.
 
 #### Scoring
