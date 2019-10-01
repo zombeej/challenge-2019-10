@@ -82,9 +82,10 @@ If you only want to run specific directories on a local run (i.e. just test your
 
 ### Leaderboard
 
-__Inputs__: _wzqeopp, uthuq, rois, kwdxauq, tpwsle_
+__Inputs__: _ttand, yfla, bsfyp, nkchi, yuwtwuq_
 
 Author | Language | Word | Score | Time (ms) | Notes
 --- | --- | --- | --- | --- | ---
-specs | Python 3 | zep, q, sori, quawk, swept | 14, 10, 4, 21, 10 | 4038.69716796875 | inefficient
+plusuncold | C++ | tad, flay, spy, kinch, q | 4, 10, 8, 14, 10 | 69.39999999999999 | 
+specs | Python 3 | tad, flay, spy, kinch, q | 4, 10, 8, 14, 10 | 2023.2907617187498 | inefficient
 
