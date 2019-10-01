@@ -1,6 +1,9 @@
 from collections import Mapping
+import json
 import os
+import random
 from six import string_types
+from string import ascii_lowercase
 import sys
 import yaml
 
@@ -36,6 +39,17 @@ def get_readme_path():
         return os.path.join(DIR, 'README.md')
 
 
+def get_json_path():
+    # set README location
+    # if commandline arg is docker
+    if len(sys.argv) > 1 and sys.argv[1] == 'docker':
+        return '/tmp/repo/results.json'
+    # else local
+    else:
+        return os.path.join(DIR, 'results.json')
+
+
+
 def get_config():
     # load the runtime config
     p = os.path.join(DIR, 'run_config.yaml')
@@ -63,15 +77,32 @@ def get_solution(s=None):
         return str(s)
 
 
+def get_letters():
+    with open(os.path.join(DIR, 'data', 'letters.json')) as f:
+        letters = json.load(f)
+
+    return letters
+
+
+def get_words():
+    with open(os.path.join(DIR, 'data', 'dictionary.txt')) as f:
+        words = f.read()
+
+    return words.splitlines()
+
+
 # Set contants
 TEST_DIRS = get_test_dirs()
 README = get_readme_path()
+JSON = get_json_path()
 CONFIG = get_config()
 SOLUTION = get_solution()
 SOLUTION_FIELD = CONFIG.get('leaderboard', {}).get('solutionField', 'Solution')
 RANKING_FIELD = CONFIG.get('leaderboard', {}).get('rankingField', 'Time')
 FIELDS = CONFIG.get('leaderboard', {}).get('fields', [])
 OOPS_FIELDS = CONFIG.get('oops', {}).get('fields', [])
+LETTERS = get_letters()
+WORDS = get_words()
 
 
 def build_test(d):
@@ -79,9 +110,9 @@ def build_test(d):
         os.system('cd {} && bash build.sh'.format(d))
 
 
-def run_test(d):
-    test_out = os.popen('cd {} && bash run.sh'.format(d)).read()
-    print('    {}'.format(test_out))
+def run_test(d, test_input):
+    test_out = os.popen(f'cd {d} && bash run.sh {test_input}').read()
+    print(f'    {test_out}')
     return test_out
 
 
@@ -97,29 +128,31 @@ def transform_results(results):
             if fields[i] == RANKING_FIELD:
                 temp[RANKING_FIELD] = float(temp[RANKING_FIELD])
         temp_results.append(temp)
+    
+    return temp_results
 
-    correct = [r for r in temp_results if r[SOLUTION_FIELD] == SOLUTION]
-    incorrect = [r for r in temp_results if r[SOLUTION_FIELD] != SOLUTION]
-    if correct:
-        avg = sum(c[RANKING_FIELD] for c in correct) / len(correct)
-        correct = correct[0]
-        correct[RANKING_FIELD] = avg
+    # correct = [r for r in temp_results if r[SOLUTION_FIELD] == SOLUTION]
+    # incorrect = [r for r in temp_results if r[SOLUTION_FIELD] != SOLUTION]
+    # if correct:
+    #     avg = sum(c[RANKING_FIELD] for c in correct) / len(correct)
+    #     correct = correct[0]
+    #     correct[RANKING_FIELD] = avg
 
-    if incorrect:
-        solutions = ','.join([i[SOLUTION_FIELD] for i in incorrect])
-        incorrect = incorrect[0]
-        incorrect[SOLUTION_FIELD] = solutions
+    # if incorrect:
+    #     solutions = ','.join([i[SOLUTION_FIELD] for i in incorrect])
+    #     incorrect = incorrect[0]
+    #     incorrect[SOLUTION_FIELD] = solutions
 
-    return correct, incorrect
+    # return correct, incorrect
 
 
-def get_test_results(d):
+def get_test_results(d, test_input):
     print('Building {}...'.format(d))
     build_test(d)
     results = []
     print('Running {}...'.format(d))
     for _ in range(CONFIG.get('testCount', 1)):
-        results.append(run_test(d))
+        results.append(run_test(d, test_input))
 
     return transform_results(results)
 
@@ -154,7 +187,8 @@ def strip_current_results(readme):
     return readme
 
 
-def data_to_md_table(data, ordered_fields, title=None, sort_field=None):
+def data_to_md_table(data, ordered_fields, title=None, sort_field=None,
+                     extra=None):
     if not sort_field:
         sort_field = ordered_fields[0]
 
@@ -180,6 +214,8 @@ def data_to_md_table(data, ordered_fields, title=None, sort_field=None):
     div = ' | '.join(['---' for _ in range(len(ordered_fields))]) + '\n'
 
     out = header + div + data + '\n\n'
+    if extra:
+        out = f'{extra}\n\n{out}'
     if title:
         if not title.endswith('\n\n'):
             title += '\n\n'
@@ -189,30 +225,113 @@ def data_to_md_table(data, ordered_fields, title=None, sort_field=None):
     return out
 
 
-def update_readme(correct, incorrect):
+def update_readme(correct, incorrect, inputs):
     readme = get_readme()
     readme = strip_current_results(readme)
 
     if correct:
+        extra = 'Inputs: _{}_'.format(', '.join(inputs))
         readme += data_to_md_table(correct, FIELDS, title='### Leaderboard',
-                                   sort_field=RANKING_FIELD)
+                                   sort_field=RANKING_FIELD, extra=extra)
 
     if incorrect:
-        readme += data_to_md_table(incorrect, OOPS_FIELDS, title='### Oops')
+        extra = 'Inputs: _{}_'.format(', '.join(inputs))
+        readme += data_to_md_table(incorrect, OOPS_FIELDS, title='### Oops',
+                                   extra=extra)
 
     write_readme(readme)
 
 
-if __name__ == '__main__':
-    correct_results = []
-    incorrect_results = []
-    for d in TEST_DIRS:
-        correct, incorrect = get_test_results(d)
-        if correct:
-            correct_results.append(correct)
-        if incorrect:
-            incorrect_results.append(incorrect)
+def get_random_letters():
+    with open(os.path.join(DIR, 'data', 'letters.json')) as f:
+        letters = json.load(f)
 
-    print('Updating README.md...')
-    update_readme(correct_results, incorrect_results)
+    word_length = random.randint(4, 10)
+    word = ''
+
+    while len(word) < word_length:
+        l = random.choice(ascii_lowercase)
+        if letters[l]['occurrence'] > 0:
+            word += l
+            letters[l]['occurrence'] -= 1
+
+    vowel_check = [l for l in 'aeiouy' if l in word]
+    if not vowel_check:
+        return get_random_letters()
+    else:
+        return word
+
+
+def sort_results(results, letters_in):
+    for r in results:
+        r.update({'input': letters_in})
+    correct = []
+    incorrect = []
+    temp_correct = []
+    results = sorted(results, key=lambda k: k[SOLUTION_FIELD], reverse=True)
+
+
+    for r in results:
+        if r[SOLUTION_FIELD] != results[0][SOLUTION_FIELD]:
+            incorrect.append(r)
+        else:
+            temp_correct.append(r)
+
+    for r in temp_correct:
+        if r['Word'] not in WORDS:
+            incorrect.append(r)
+        elif not validate_score(r['Word'], r[SOLUTION_FIELD]):
+            incorrect.append(r)
+        else:
+            correct.append(r)
+
+    c_out = {}
+    for c in correct:
+        a = c.pop('Author')
+        if a not in c_out:
+            c_out[a] = []
+
+        c_out[a].append(c)
+
+    i_out = {}
+    for i in incorrect:
+        a = i.pop('Author')
+        if a not in i_out:
+            i_out[a] = []
+
+        i_out[a].append(i)
+
+    return c_out, i_out
+
+
+def validate_score(word, score):
+    calc = sum(LETTERS.get(l, {}).get('score', 0) for l in word)
+    return score == calc
+
+
+def dump_results(results):
+    with open(JSON, 'w') as f:
+        json.dump(results, f, indent=2)
+
+
+if __name__ == '__main__':
+    master_results = {}
+    for _ in range(5):
+        letters_in = get_random_letters()
+        master_results[letters_in] = {}
+        results = []
+        for d in TEST_DIRS:
+            results += get_test_results(d, letters_in)
+        
+        correct, incorrect = sort_results(results, letters_in)
+        if correct:
+            master_results[letters_in]['correct'] = correct
+        if incorrect:
+            master_results[letters_in]['incorrect'] = incorrect
+
+    print('Dumping results.json...')
+    dump_results(master_results)
+    # # need to then rank and update
+    # print('Updating README.md...')
+    # update_readme(correct, incorrect, list(master_results.keys()))
     print('Done')
