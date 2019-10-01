@@ -82,8 +82,9 @@ If you only want to run specific directories on a local run (i.e. just test your
 
 ### Leaderboard
 
-This is where the leaderboard will go.
+__Inputs__: _wzqeopp, uthuq, rois, kwdxauq, tpwsle_
 
-### Oops
+Author | Language | Word | Score | Time (ms) | Notes
+--- | --- | --- | --- | --- | ---
+specs | Python 3 | zep, q, sori, quawk, swept | 14, 10, 4, 21, 10 | 4038.69716796875 | inefficient
 
-If someone offers an incorrect solution, it will get posted here when the test suite is run.

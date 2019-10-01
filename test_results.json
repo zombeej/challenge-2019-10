@@ -1,1 +1,277 @@
-[]
+{
+  "Overall Rankings": [
+    {
+      "Author": "specs",
+      "Language": "Python 3",
+      "Word": "zep, q, sori, quawk, swept",
+      "Score": "14, 10, 4, 21, 10",
+      "Time (ms)": 4038.69716796875,
+      "Notes": "inefficient"
+    }
+  ],
+  "Correct": {
+    "wzqeopp": [
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "zep, q, sori, quawk, swept",
+        "Score": "14, 10, 4, 21, 10",
+        "Time (ms)": 4038.69716796875,
+        "Notes": "inefficient"
+      }
+    ],
+    "uthuq": [
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "q",
+        "Score": 10,
+        "Time (ms)": 133.467041015625,
+        "Notes": "inefficient"
+      }
+    ],
+    "rois": [
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "sori",
+        "Score": 4,
+        "Time (ms)": 70.134716796875,
+        "Notes": "inefficient"
+      }
+    ],
+    "kwdxauq": [
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "quawk",
+        "Score": 21,
+        "Time (ms)": 9535.05107421875,
+        "Notes": "inefficient"
+      }
+    ],
+    "tpwsle": [
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "swept",
+        "Score": 10,
+        "Time (ms)": 885.700927734375,
+        "Notes": "inefficient"
+      }
+    ]
+  },
+  "Incorrect": [],
+  "Raw results": {
+    "wzqeopp": [
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "zep, q, sori, quawk, swept",
+        "Score": "14, 10, 4, 21, 10",
+        "Time (ms)": 4038.69716796875,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "zep",
+        "Score": 14,
+        "Time (ms)": 9770.024169921875,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "zep",
+        "Score": 14,
+        "Time (ms)": 9531.677001953125,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "zep",
+        "Score": 14,
+        "Time (ms)": 9534.45654296875,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "zep",
+        "Score": 14,
+        "Time (ms)": 9502.9501953125,
+        "Notes": "inefficient"
+      }
+    ],
+    "uthuq": [
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "q",
+        "Score": 10,
+        "Time (ms)": 133.467041015625,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "q",
+        "Score": 10,
+        "Time (ms)": 132.630859375,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "q",
+        "Score": 10,
+        "Time (ms)": 133.836669921875,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "q",
+        "Score": 10,
+        "Time (ms)": 135.4677734375,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "q",
+        "Score": 10,
+        "Time (ms)": 132.074462890625,
+        "Notes": "inefficient"
+      }
+    ],
+    "rois": [
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "sori",
+        "Score": 4,
+        "Time (ms)": 70.134716796875,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "sori",
+        "Score": 4,
+        "Time (ms)": 68.150146484375,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "sori",
+        "Score": 4,
+        "Time (ms)": 70.32421875,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "sori",
+        "Score": 4,
+        "Time (ms)": 69.41845703125,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "sori",
+        "Score": 4,
+        "Time (ms)": 69.6357421875,
+        "Notes": "inefficient"
+      }
+    ],
+    "kwdxauq": [
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "quawk",
+        "Score": 21,
+        "Time (ms)": 9535.05107421875,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "quawk",
+        "Score": 21,
+        "Time (ms)": 9626.7177734375,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "quawk",
+        "Score": 21,
+        "Time (ms)": 9475.013427734375,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "quawk",
+        "Score": 21,
+        "Time (ms)": 9534.570556640625,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "quawk",
+        "Score": 21,
+        "Time (ms)": 9522.02294921875,
+        "Notes": "inefficient"
+      }
+    ],
+    "tpwsle": [
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "swept",
+        "Score": 10,
+        "Time (ms)": 885.700927734375,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "swept",
+        "Score": 10,
+        "Time (ms)": 887.205810546875,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "swept",
+        "Score": 10,
+        "Time (ms)": 883.4697265625,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "swept",
+        "Score": 10,
+        "Time (ms)": 888.264892578125,
+        "Notes": "inefficient"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "swept",
+        "Score": 10,
+        "Time (ms)": 890.133544921875,
+        "Notes": "inefficient"
+      }
+    ]
+  }
+}
