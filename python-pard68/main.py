@@ -17,8 +17,7 @@ def get_dict(dictionary='../data/dictionary.txt'):
 
 	with open(dictionary, 'r') as f:
 		words = f.readlines()
-	return [(word, Counter(word)) for word in
-			[word.strip() for word in words]]
+	return [word.strip() for word in words]
 
 
 def get_values(scores=scores):
@@ -39,20 +38,11 @@ def tally(word, values):
 	return sum([values[x] for x in word])
 
 
-def all(bool_list):
-	for x in bool_list:
-		if x:
-			pass
-		else:
-			return False
-	return True
-
-
 def find_words(tiles, dictionary):
 	tiles = Counter(tiles)
 	valid_words = []
-	for word, letters in dictionary:
-		if len(tiles) >= len(word) and not (letters - tiles):
+	for word in dictionary:
+		if len(tiles) >= len(word) and not (Counter(word) - tiles):
 			valid_words.append(word)
 	return valid_words
 
