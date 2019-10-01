@@ -22,3 +22,6 @@
 *.tfplan
 run_tf.sh
 *.tfstate*
+
+# Ian's Stuff
+python-pard68/testing
