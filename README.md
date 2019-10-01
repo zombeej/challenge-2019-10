@@ -16,7 +16,7 @@ Birthed out of our Slack org, The Reformed Devs have begun monthly coding challe
 
 #### Problem
 
-Given a set of *n* letters, what is the highest scoring valid word that you can make using the set? Scoring is based on Scrabble letter point values (see `data/letters.json`). Word validity will be based on a dictionary included in the repo (`data/dictionary.txt`).
+Given a random string of letters whose length is between 4 and 10, inclusive, what is the highest scoring valid word that you can make using the set? Scoring is based on Scrabble letter point values (see `data/letters.json`). Word validity will be based on a dictionary included in the repo (`data/dictionary.txt`).
 
 Inputs will be given as a lowercase string. Dictionary file is all lowercase as well.
 
