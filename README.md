@@ -32,7 +32,7 @@ What should be timed? Generally speaking, nearly everything. Historically the fo
 
 #### Output
 
-Running your solution should output your info in the following format: `username, language, word formed, solution, time in ms, notes`.
+Running your solution should output your info in the following format: `username, language, word formed, score, time in ms, notes`.
 
 Using the first example from above, example output might be: `specs, Python3, cab, 7, 130, these are the notes`.
 
