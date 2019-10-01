@@ -26,6 +26,10 @@ Given the input letters `abc` your max score would be 7. A=1, B=3, C=3, and ther
 
 Given the letters `iisq`, your max score would be 10. I=1, S=1, Q=10, and none of the multi letter words that can be formed score higher than just Q itself.
 
+#### Timing
+
+What should be timed? Generally speaking, nearly everything. Historically the following are excluded from your timer: Importing libraries/modules, setting constants, setting test input, printing the solution. Everything else should be inside your timer, including loading the dictionary.
+
 #### Output
 
 Running your solution should output your info in the following format: `username, language, word formed, solution, time in ms, notes`.
