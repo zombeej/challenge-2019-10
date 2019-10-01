@@ -12,24 +12,31 @@ Birthed out of our Slack org, The Reformed Devs have begun monthly coding challe
 * [July 2019](https://github.com/ReformedDevs/challenge-2019-07)
 * [September 2019](https://github.com/ReformedDevs/challenge-2019-09)
 
-#### Future Challenge Ideas
-
-* Boggle Solver
-* Sudoku Generator/Solver
-
 ### This Month's Challenge
 
 #### Problem
 
-A description of the problem(s) to be solved. Include an example to be helpful. Explicit is better than implicit.
+Given a set of *n* letters, what is the highest scoring valid word that you can make using the set? Scoring is based on Scrabble letter point values (see `data/letters.json`). Word validity will be based on a dictionary included in the repo (`data/dictionary.txt`).
+
+Examples:
+
+Given the letters A, B, C, your max score would be 7. A=1, B=3, C=3, and there are words that can be formed using all letters.
+
+Given the letters I, I, S, Q, your max score would be 10. I=1, S=1, Q=10, and none of the multi letter words that can be formed score higher than just Q itself.
 
 #### Output
 
-Running your solution should output your info in the following format: `desired, output, items, here`.
+Running your solution should output your info in the following format: `username, language, word formed, solution, time in ms, notes`.
 
 #### Scoring
 
-Description of how rank will be determined.
+**Important**: Make sure your solution can take an input. The letters to handle will be sent as a string in a BASH variable. See example folder for details on how this will work.
+
+Each solution will be run 5 times with same input and the time and solution recorded. Any solution that doesn't submit the same score every time for the same input will be counted as invalid.
+
+There will be 5 randomized valid inputs (i.e. each solution will be run 25 times.) The times will be averaged. Ranking will be based on average time. If your calculated highest score is not the same as the rest of the solutions, your solution will be counted invalid.
+
+A dump of all solution data will be put into a JSON file in this directory, and the Leaderboard and Oops sections will be updated below with summary data.
 
 ### Solution Setup
 
@@ -39,6 +46,7 @@ Your solution directory should include the following:
 
 * `build.sh` file (only if you need to build/compile your solution)
 * `run.sh` file (a shell file that has the command to execute your solution)
+  * **Important**: Make sure your solution can take an input. The letters to handle will be sent as a string in a BASH variable. See example folder for details on how this will work.
 * the file(s) needed to build and run your solution.
 
 See the `example` directory for more guidance.
