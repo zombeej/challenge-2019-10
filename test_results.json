@@ -1,276 +1,524 @@
 {
   "Overall Rankings": [
     {
+      "Author": "plusuncold",
+      "Language": "C++",
+      "Word": "tad, flay, spy, kinch, q",
+      "Score": "4, 10, 8, 14, 10",
+      "Time (ms)": 69.39999999999999,
+      "Notes": ""
+    },
+    {
       "Author": "specs",
       "Language": "Python 3",
-      "Word": "zep, q, sori, quawk, swept",
-      "Score": "14, 10, 4, 21, 10",
-      "Time (ms)": 4038.69716796875,
+      "Word": "tad, flay, spy, kinch, q",
+      "Score": "4, 10, 8, 14, 10",
+      "Time (ms)": 2023.2907617187498,
       "Notes": "inefficient"
     }
   ],
   "Correct": {
-    "wzqeopp": [
+    "ttand": [
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "tad, flay, spy, kinch, q",
+        "Score": "4, 10, 8, 14, 10",
+        "Time (ms)": 69.39999999999999,
+        "Notes": ""
+      },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "zep, q, sori, quawk, swept",
-        "Score": "14, 10, 4, 21, 10",
-        "Time (ms)": 4038.69716796875,
+        "Word": "tad, flay, spy, kinch, q",
+        "Score": "4, 10, 8, 14, 10",
+        "Time (ms)": 2023.2907617187498,
         "Notes": "inefficient"
       }
     ],
-    "uthuq": [
+    "yfla": [
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "flay",
+        "Score": 10,
+        "Time (ms)": 68.4,
+        "Notes": ""
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "flay",
+        "Score": 10,
+        "Time (ms)": 74.10546875,
+        "Notes": "inefficient"
+      }
+    ],
+    "bsfyp": [
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "spy",
+        "Score": 8,
+        "Time (ms)": 70.2,
+        "Notes": ""
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "spy",
+        "Score": 8,
+        "Time (ms)": 138.14013671875,
+        "Notes": "inefficient"
+      }
+    ],
+    "nkchi": [
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "kinch",
+        "Score": 14,
+        "Time (ms)": 69.4,
+        "Notes": ""
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "kinch",
+        "Score": 14,
+        "Time (ms)": 135.296533203125,
+        "Notes": "inefficient"
+      }
+    ],
+    "yuwtwuq": [
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "q",
+        "Score": 10,
+        "Time (ms)": 71.2,
+        "Notes": ""
+      },
       {
         "Author": "specs",
         "Language": "Python 3",
         "Word": "q",
         "Score": 10,
-        "Time (ms)": 133.467041015625,
-        "Notes": "inefficient"
-      }
-    ],
-    "rois": [
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "sori",
-        "Score": 4,
-        "Time (ms)": 70.134716796875,
-        "Notes": "inefficient"
-      }
-    ],
-    "kwdxauq": [
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "quawk",
-        "Score": 21,
-        "Time (ms)": 9535.05107421875,
-        "Notes": "inefficient"
-      }
-    ],
-    "tpwsle": [
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "swept",
-        "Score": 10,
-        "Time (ms)": 885.700927734375,
+        "Time (ms)": 9635.479345703125,
         "Notes": "inefficient"
       }
     ]
   },
   "Incorrect": [],
   "Raw results": {
-    "wzqeopp": [
+    "ttand": [
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "zep, q, sori, quawk, swept",
-        "Score": "14, 10, 4, 21, 10",
-        "Time (ms)": 4038.69716796875,
+        "Word": "tad, flay, spy, kinch, q",
+        "Score": "4, 10, 8, 14, 10",
+        "Time (ms)": 2023.2907617187498,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "zep",
-        "Score": 14,
-        "Time (ms)": 9770.024169921875,
+        "Word": "tad",
+        "Score": 4,
+        "Time (ms)": 133.63720703125,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "zep",
-        "Score": 14,
-        "Time (ms)": 9531.677001953125,
+        "Word": "tad",
+        "Score": 4,
+        "Time (ms)": 135.285400390625,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "zep",
-        "Score": 14,
-        "Time (ms)": 9534.45654296875,
+        "Word": "tad",
+        "Score": 4,
+        "Time (ms)": 132.541015625,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "zep",
-        "Score": 14,
-        "Time (ms)": 9502.9501953125,
+        "Word": "tad",
+        "Score": 4,
+        "Time (ms)": 132.404296875,
         "Notes": "inefficient"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "tad, flay, spy, kinch, q",
+        "Score": "4, 10, 8, 14, 10",
+        "Time (ms)": 69.39999999999999,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "tad",
+        "Score": 4,
+        "Time (ms)": 69.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "tad",
+        "Score": 4,
+        "Time (ms)": 67.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "tad",
+        "Score": 4,
+        "Time (ms)": 68.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "tad",
+        "Score": 4,
+        "Time (ms)": 68.0,
+        "Notes": ""
       }
     ],
-    "uthuq": [
+    "yfla": [
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "q",
+        "Word": "flay",
         "Score": 10,
-        "Time (ms)": 133.467041015625,
+        "Time (ms)": 74.10546875,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "q",
+        "Word": "flay",
         "Score": 10,
-        "Time (ms)": 132.630859375,
+        "Time (ms)": 73.145751953125,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "q",
+        "Word": "flay",
         "Score": 10,
-        "Time (ms)": 133.836669921875,
+        "Time (ms)": 74.87841796875,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "q",
+        "Word": "flay",
         "Score": 10,
-        "Time (ms)": 135.4677734375,
+        "Time (ms)": 74.099853515625,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "q",
+        "Word": "flay",
         "Score": 10,
-        "Time (ms)": 132.074462890625,
+        "Time (ms)": 71.684326171875,
         "Notes": "inefficient"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "flay",
+        "Score": 10,
+        "Time (ms)": 68.4,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "flay",
+        "Score": 10,
+        "Time (ms)": 69.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "flay",
+        "Score": 10,
+        "Time (ms)": 68.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "flay",
+        "Score": 10,
+        "Time (ms)": 68.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "flay",
+        "Score": 10,
+        "Time (ms)": 68.0,
+        "Notes": ""
       }
     ],
-    "rois": [
+    "bsfyp": [
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "sori",
-        "Score": 4,
-        "Time (ms)": 70.134716796875,
+        "Word": "spy",
+        "Score": 8,
+        "Time (ms)": 138.14013671875,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "sori",
-        "Score": 4,
-        "Time (ms)": 68.150146484375,
+        "Word": "spy",
+        "Score": 8,
+        "Time (ms)": 139.23779296875,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "sori",
-        "Score": 4,
-        "Time (ms)": 70.32421875,
+        "Word": "spy",
+        "Score": 8,
+        "Time (ms)": 135.4462890625,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "sori",
-        "Score": 4,
-        "Time (ms)": 69.41845703125,
+        "Word": "spy",
+        "Score": 8,
+        "Time (ms)": 135.790283203125,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "sori",
-        "Score": 4,
-        "Time (ms)": 69.6357421875,
+        "Word": "spy",
+        "Score": 8,
+        "Time (ms)": 139.684814453125,
         "Notes": "inefficient"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "spy",
+        "Score": 8,
+        "Time (ms)": 70.2,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "spy",
+        "Score": 8,
+        "Time (ms)": 72.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "spy",
+        "Score": 8,
+        "Time (ms)": 68.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "spy",
+        "Score": 8,
+        "Time (ms)": 72.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "spy",
+        "Score": 8,
+        "Time (ms)": 70.0,
+        "Notes": ""
       }
     ],
-    "kwdxauq": [
+    "nkchi": [
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "quawk",
-        "Score": 21,
-        "Time (ms)": 9535.05107421875,
+        "Word": "kinch",
+        "Score": 14,
+        "Time (ms)": 135.296533203125,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "quawk",
-        "Score": 21,
-        "Time (ms)": 9626.7177734375,
+        "Word": "kinch",
+        "Score": 14,
+        "Time (ms)": 134.75830078125,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "quawk",
-        "Score": 21,
-        "Time (ms)": 9475.013427734375,
+        "Word": "kinch",
+        "Score": 14,
+        "Time (ms)": 135.410400390625,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "quawk",
-        "Score": 21,
-        "Time (ms)": 9534.570556640625,
+        "Word": "kinch",
+        "Score": 14,
+        "Time (ms)": 133.82861328125,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "quawk",
-        "Score": 21,
-        "Time (ms)": 9522.02294921875,
+        "Word": "kinch",
+        "Score": 14,
+        "Time (ms)": 134.33544921875,
         "Notes": "inefficient"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "kinch",
+        "Score": 14,
+        "Time (ms)": 69.4,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "kinch",
+        "Score": 14,
+        "Time (ms)": 68.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "kinch",
+        "Score": 14,
+        "Time (ms)": 70.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "kinch",
+        "Score": 14,
+        "Time (ms)": 71.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "kinch",
+        "Score": 14,
+        "Time (ms)": 69.0,
+        "Notes": ""
       }
     ],
-    "tpwsle": [
+    "yuwtwuq": [
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "swept",
+        "Word": "q",
         "Score": 10,
-        "Time (ms)": 885.700927734375,
+        "Time (ms)": 9635.479345703125,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "swept",
+        "Word": "q",
         "Score": 10,
-        "Time (ms)": 887.205810546875,
+        "Time (ms)": 9741.2421875,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "swept",
+        "Word": "q",
         "Score": 10,
-        "Time (ms)": 883.4697265625,
+        "Time (ms)": 9499.828857421875,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "swept",
+        "Word": "q",
         "Score": 10,
-        "Time (ms)": 888.264892578125,
+        "Time (ms)": 9875.474853515625,
         "Notes": "inefficient"
       },
       {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "swept",
+        "Word": "q",
         "Score": 10,
-        "Time (ms)": 890.133544921875,
+        "Time (ms)": 9473.355712890625,
         "Notes": "inefficient"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "q",
+        "Score": 10,
+        "Time (ms)": 71.2,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "q",
+        "Score": 10,
+        "Time (ms)": 70.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "q",
+        "Score": 10,
+        "Time (ms)": 73.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "q",
+        "Score": 10,
+        "Time (ms)": 69.0,
+        "Notes": ""
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "q",
+        "Score": 10,
+        "Time (ms)": 72.0,
+        "Notes": ""
       }
     ]
   }
