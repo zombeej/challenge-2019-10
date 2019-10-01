@@ -52,7 +52,7 @@ def find_words(tiles, dictionary):
 	tiles = Counter(tiles)
 	valid_words = []
 	for word, letters in dictionary:
-		if not (letters - tiles):
+		if len(tiles) >= len(word) and not (letters - tiles):
 			valid_words.append(word)
 	return valid_words
 
