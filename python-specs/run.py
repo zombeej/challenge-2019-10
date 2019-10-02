@@ -9,7 +9,7 @@ from time import time
 
 USER = 'specs'
 LANG = 'Python 3'
-NOTES = 'inefficient'
+NOTES = 'strolling down the yeet'
 DATA = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'data')
 
 # def get_random_letters():
