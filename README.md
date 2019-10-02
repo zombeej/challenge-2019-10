@@ -82,15 +82,15 @@ If you only want to run specific directories on a local run (i.e. just test your
 
 ### Leaderboard
 
-__Inputs__: _qazvl, jtlektg, bsupz, oczigwt, rmbihn_
+__Inputs__: _aogpnnx, kigvvu, flzcxa, cokbfd, bkgi_
 
 Author | Language | Word | Score | Time (ms) | Notes
 --- | --- | --- | --- | --- | ---
-plusuncold | C++ | laz, jet, suz, zoic, binh | 12, 10, 12, 15, 9 | 13.12 | 
-cork | Node | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 65.04110972 | initial run - no optimizations
-cco3 | javascript | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 66.91999999999999 | sparse arrays
-specs | Python 3 | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 78.31647460937499 | strolling down the yeet
-zombeej | Node | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 92.92 | hoooo doggy
-basking2 | ruby | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 108.02380859375 | ARG: ["qazvl"]
-pard68 | Python3 | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 184.2138212000009 | gotta eat your yeeties!
+plusuncold | C++ | pax, kivu, zax, bock, big | 12, 11, 19, 12, 6 | 18.4 | 
+specs | Python 3 | pax, kivu, zax, bock, big | 12, 11, 19, 12, 6 | 59.92486328125 | strolling down the yeet
+cork | Node | pax, kivu, zax, bock, big | 12, 11, 19, 12, 6 | 72.25321912000001 | Put some FP and async on it
+cco3 | javascript | pax, kivu, zax, bock, big | 12, 11, 19, 12, 6 | 75.72 | sparse arrays
+zombeej | Node | pax, kivu, zax, bock, big | 12, 11, 19, 12, 6 | 83.76 | hoooo doggy
+basking2 | ruby | pax, kivu, zax, bock, big | 12, 11, 19, 12, 6 | 99.14125 | ARG: ["aogpnnx"]
+pard68 | Python3 | pox, kivu, zax, bock, big | 12, 11, 19, 12, 6 | 126.47911236000141 | gotta eat your yeeties!
 
