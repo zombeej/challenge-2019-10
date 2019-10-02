@@ -15,9 +15,9 @@ DIR = os.path.abspath(os.path.dirname(__file__))
 def get_test_dirs():
     # get the list of directories to run tests on
     #  if provided on the command line
-    if len(sys.argv) > 2:
+    if len(sys.argv) > 1:
         return [
-            d for d in sys.argv[2].split(',')
+            d for d in sys.argv[1].split(',')
             if '-' in d and len(d.split('-')) == 2
         ]
     # else get all of em
@@ -31,23 +31,11 @@ def get_test_dirs():
 
 
 def get_readme_path():
-    # set README location
-    # if commandline arg is docker
-    if len(sys.argv) > 1 and sys.argv[1] == 'docker':
-        return '/tmp/repo/README.md'
-    # else local
-    else:
-        return os.path.join(DIR, 'README.md')
+    return os.path.join(DIR, 'README.md')
 
 
 def get_json_path():
-    # set test_results.json location
-    # if commandline arg is docker
-    if len(sys.argv) > 1 and sys.argv[1] == 'docker':
-        return '/tmp/repo/test_results.json'
-    # else local
-    else:
-        return os.path.join(DIR, 'test_results.json')
+    return os.path.join(DIR, 'test_results.json')
 
 
 def get_config():
@@ -105,7 +93,7 @@ LETTERS = get_letters()
 
 def build_test(d):
     if os.path.isfile(os.path.join(d, 'build.sh')):
-        os.system('cd {} && bash build.sh'.format(d))
+        os.system(f'cd {d} && bash build.sh')
 
 
 def run_test(d, test_case):
@@ -133,7 +121,7 @@ def get_readme():
         if readme:
             return readme
 
-    raise Exception('No README file found at path: {}'.format(README))
+    raise Exception(f'No README file found at path: {README}')
 
 
 def write_readme(readme):
@@ -141,7 +129,7 @@ def write_readme(readme):
         with open(README, 'w') as f:
             f.write(readme)
     else:
-        raise Exception('No README file found at path: {}'.format(README))
+        raise Exception(f'No README file found at path: {README}')
 
 
 def strip_current_results(readme):
@@ -198,12 +186,13 @@ def data_to_md_table(data, ordered_fields, title=None, sort_field=None,
 
 
 def update_readme(inputs, correct, incorrect):
+    inputs = ', '.join(inputs)
     readme = get_readme()
     readme = strip_current_results(readme)
 
     if correct:
         fields = list(correct[0].keys())
-        extra = '__Inputs__: _{}_'.format(', '.join(inputs))
+        extra = f'__Inputs__: _{inputs}_'
         readme += data_to_md_table(correct, fields, title='### Leaderboard',
                                    sort_field=RANKING_FIELD, extra=extra)
 
