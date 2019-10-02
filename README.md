@@ -78,7 +78,7 @@ You can run the container lcoally by running `./run_docker.sh` after building th
 
 You can run the tests locally (assuming you have all the language support installed) by running `python run_tests.py`.
 
-If you only want to run specific directories on a local run (i.e. just test your solution), run `python run_tests.py local comma-separated,list-of,solution-dirs`.
+If you only want to run specific directories on a local run (i.e. just test your solution), run `python run_tests.py comma-separated,list-of,solution-dirs`.
 
 ### Leaderboard
 
