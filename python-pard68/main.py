@@ -18,7 +18,7 @@ def get_dict(dictionary='../data/dictionary.txt', length=100):
 	with open(dictionary, 'r') as f:
 		words = set()
 		for line in f:
-			if len(line) <= length:
+			if len(line) <= length + 1:
 				words.add(line.strip())
 	return words
 
@@ -64,6 +64,7 @@ if __name__ == "__main__":
 
 	# setup
 	word = sys.argv[1]
+	print(len(word))
 	dictionary = get_dict(length=len(word))
 	values = get_values()
 
