@@ -118,7 +118,7 @@ def get_test_results(d, test_case):
     print(f'\nBuilding {d}...')
     build_test(d)
     results = []
-    print('Running {}...'.format(d))
+    print(f'Running {d} with test input: {test_case} ...')
     for _ in range(CONFIG.get('testCount', 1)):
         results.append(run_test(d, test_case))
 
