@@ -82,10 +82,13 @@ If you only want to run specific directories on a local run (i.e. just test your
 
 ### Leaderboard
 
-__Inputs__: _ttand, yfla, bsfyp, nkchi, yuwtwuq_
+__Inputs__: _sdskoqh, luaj, wznapcc, npuolv, jnfayp_
 
 Author | Language | Word | Score | Time (ms) | Notes
 --- | --- | --- | --- | --- | ---
-plusuncold | C++ | tad, flay, spy, kinch, q | 4, 10, 8, 14, 10 | 69.39999999999999 | 
-specs | Python 3 | tad, flay, spy, kinch, q | 4, 10, 8, 14, 10 | 2023.2907617187498 | inefficient
+plusuncold | C++ | shoq, ju, zac, vuln, jay | 16, 9, 14, 7, 13 | 13.2 | 
+cork | Node | shoq, ju, zac, vuln, jay | 16, 9, 14, 7, 13 | 64.29731352 | initial run - no optimizations
+cco3 | javascript | shoq, ju, zac, vuln, jay | 16, 9, 14, 7, 13 | 66.84 | sparse arrays
+basking2 | ruby | shoq, ju, zac, vuln, jay | 16, 9, 14, 7, 13 | 107.54439453125 | ARG: ["sdskoqh"]
+specs | Python 3 | shoq, ju, zac, vuln, jay | 16, 9, 14, 7, 13 | 4157.114462890624 | inefficient
 
