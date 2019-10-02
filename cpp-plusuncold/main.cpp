@@ -7,6 +7,7 @@
 #include <string>
 #include <set>
 #include <vector>
+#include <fstream>
 
 #include "timer.h"
 
@@ -59,14 +60,14 @@ void combinationsNR(string& soFar,
 void getDictionaryFromFile(short maxWordLength) {
     //auto id_read = Timer::timerBegin();
     vector<string> dictVector;
-    FILE* file = fopen("../data/dictionary.txt","r");
-    char buf[50];
-    while(fgets(buf, sizeof buf, file) != NULL) {
-	string word(buf);
-	if (word.size() > maxWordLength + 1) { // account for the new line character
+    std::ifstream file;
+    file.open("../data/dictionary.txt");
+
+    string word;
+    while(getline(file,word)) {
+	if (word.size() > maxWordLength) { // Word isn't useful if it's over the max word length
 	    continue;
 	}
-	word.pop_back();
 	dictVector.push_back(word);
     }
     //auto time_read = Timer::timerEnd(id_read);
