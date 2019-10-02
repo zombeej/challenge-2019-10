@@ -56,20 +56,23 @@ void combinationsNR(string& soFar,
     
 }
 
-void getDictionaryFromFile() {
+void getDictionaryFromFile(short maxWordLength) {
     //auto id_read = Timer::timerBegin();
     vector<string> dictVector;
     FILE* file = fopen("../data/dictionary.txt","r");
     char buf[50];
     while(fgets(buf, sizeof buf, file) != NULL) {
 	string word(buf);
+	if (word.size() > maxWordLength + 1) { // account for the new line character
+	    continue;
+	}
 	word.pop_back();
 	dictVector.push_back(word);
     }
     //auto time_read = Timer::timerEnd(id_read);
     //auto id_put = Timer::timerBegin();
 
-    dictionary.insert(dictVector.begin(), dictVector.end());
+    dictionary = set<string>(dictVector.begin(), dictVector.end());
     //auto time_put_in_dictionary = Timer::timerEnd(id_put);
     //cout << "id read " << time_read << " id put " << time_put_in_dictionary << endl; exit(0);
 }
@@ -80,7 +83,7 @@ int main(int argc, char* argv[]) {
     string currentGuess;
     short bestScore = 0;
     string letters(argv[1]);
-    getDictionaryFromFile();
+    getDictionaryFromFile(letters.size());
 
     combinationsNR(currentGuess, letters, bestWord, bestScore);
 
