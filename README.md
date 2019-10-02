@@ -82,13 +82,15 @@ If you only want to run specific directories on a local run (i.e. just test your
 
 ### Leaderboard
 
-__Inputs__: _sdskoqh, luaj, wznapcc, npuolv, jnfayp_
+__Inputs__: _qazvl, jtlektg, bsupz, oczigwt, rmbihn_
 
 Author | Language | Word | Score | Time (ms) | Notes
 --- | --- | --- | --- | --- | ---
-plusuncold | C++ | shoq, ju, zac, vuln, jay | 16, 9, 14, 7, 13 | 13.2 | 
-cork | Node | shoq, ju, zac, vuln, jay | 16, 9, 14, 7, 13 | 64.29731352 | initial run - no optimizations
-cco3 | javascript | shoq, ju, zac, vuln, jay | 16, 9, 14, 7, 13 | 66.84 | sparse arrays
-basking2 | ruby | shoq, ju, zac, vuln, jay | 16, 9, 14, 7, 13 | 107.54439453125 | ARG: ["sdskoqh"]
-specs | Python 3 | shoq, ju, zac, vuln, jay | 16, 9, 14, 7, 13 | 4157.114462890624 | inefficient
+plusuncold | C++ | laz, jet, suz, zoic, binh | 12, 10, 12, 15, 9 | 13.12 | 
+cork | Node | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 65.04110972 | initial run - no optimizations
+cco3 | javascript | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 66.91999999999999 | sparse arrays
+specs | Python 3 | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 78.31647460937499 | strolling down the yeet
+zombeej | Node | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 92.92 | hoooo doggy
+basking2 | ruby | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 108.02380859375 | ARG: ["qazvl"]
+pard68 | Python3 | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 184.2138212000009 | gotta eat your yeeties!
 
