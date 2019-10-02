@@ -334,7 +334,7 @@ def consolidate_incorrects(results):
                 ('Author', u),
                 ('Input', case),
                 ('Words', ', '.join(m['Word'] for m in match)),
-                ('Scores', ', '.join(m['Score'] for m in match))
+                ('Scores', ', '.join(str(m['Score']) for m in match))
             ])
             out.append(t)
 
