@@ -5,19 +5,22 @@ from collections import Counter
 
 
 # Filthy Globals
-scores = [1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10]
+scores = (1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10)
 
 
-def get_dict(dictionary='../data/dictionary.txt'):
+def get_dict(dictionary='../data/dictionary.txt', length=100):
 	"""
 	Takes a string referencing the location of a text file
-	Reads that file line by line into a list
-	Removes any whitespace from the list and returns it
+	Optionally takes the length of the letters we're finding a word for
+	Reads that file line by line into a set, removing whitespace
 	"""
 
 	with open(dictionary, 'r') as f:
-		words = f.readlines()
-	return [word.strip() for word in words]
+		words = set()
+		for line in f:
+			if len(line) <= length:
+				words.add(line.strip())
+	return words
 
 
 def get_values(scores=scores):
@@ -61,7 +64,7 @@ if __name__ == "__main__":
 
 	# setup
 	word = sys.argv[1]
-	dictionary = get_dict()
+	dictionary = get_dict(length=len(word))
 	values = get_values()
 
 	# DO IT!
