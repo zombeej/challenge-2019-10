@@ -18,6 +18,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
     php-cli \
     python3 \
     python3-pip \
+    ruby \
+    ruby-bundler \
     rustc
 
 # Install python libraries for run script
