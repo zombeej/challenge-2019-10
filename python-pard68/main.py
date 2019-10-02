@@ -64,7 +64,6 @@ if __name__ == "__main__":
 
 	# setup
 	word = sys.argv[1]
-	print(len(word))
 	dictionary = get_dict(length=len(word))
 	values = get_values()
 
