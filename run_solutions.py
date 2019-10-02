@@ -93,7 +93,7 @@ LETTERS = get_letters()
 
 def build_test(d):
     if os.path.isfile(os.path.join(d, 'build.sh')):
-        os.system('cd {} && bash build.sh'.format(d))
+        os.system(f'cd {d} && bash build.sh')
 
 
 def run_test(d, test_case):
@@ -121,7 +121,7 @@ def get_readme():
         if readme:
             return readme
 
-    raise Exception('No README file found at path: {}'.format(README))
+    raise Exception(f'No README file found at path: {README}')
 
 
 def write_readme(readme):
@@ -129,7 +129,7 @@ def write_readme(readme):
         with open(README, 'w') as f:
             f.write(readme)
     else:
-        raise Exception('No README file found at path: {}'.format(README))
+        raise Exception(f'No README file found at path: {README}')
 
 
 def strip_current_results(readme):
@@ -186,12 +186,13 @@ def data_to_md_table(data, ordered_fields, title=None, sort_field=None,
 
 
 def update_readme(inputs, correct, incorrect):
+    inputs = ', '.join(inputs)
     readme = get_readme()
     readme = strip_current_results(readme)
 
     if correct:
         fields = list(correct[0].keys())
-        extra = '__Inputs__: _{}_'.format(', '.join(inputs))
+        extra = f'__Inputs__: _{inputs}_'
         readme += data_to_md_table(correct, fields, title='### Leaderboard',
                                    sort_field=RANKING_FIELD, extra=extra)
 
