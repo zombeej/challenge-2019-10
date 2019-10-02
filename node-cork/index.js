@@ -1,14 +1,14 @@
 const USERNAME = 'cork'
       LANGUAGE = 'Node'
-      NOTES = 'initial run - no optimizations'
+      NOTES = 'move regex to global scope'
 
 const fs = require('fs')
       path = require('path')
       readline = require('readline')
-      stream = require('stream')
 
 const dataPath = path.join(__dirname, '..', 'data')
       INPUT = process.argv[2] || null
+      invalidCharRegex = RegExp(`[^${INPUT}]`)
 
 const readJSONFile = path => {
   const data = fs.readFileSync(path)
@@ -52,14 +52,11 @@ let topScoringWord = { score: 0, word: null }
 const lettersDict = readJSONFile(dataPath + '/letters.json')
 
 const inputStream = fs.createReadStream(dataPath + '/dictionary.txt')
-      outputStream = new stream()
       reader = readline.createInterface({
         input: inputStream,
-        output: outputStream
       })
 
 const isInvalidWord = word => {
-  const invalidCharRegex = RegExp(`[^${INPUT}]`)
   return invalidCharRegex.test(word)
 }
 
