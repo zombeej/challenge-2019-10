@@ -6,6 +6,8 @@
 #include <ctime>
 #include <string>
 #include <set>
+#include <vector>
+#include <fstream>
 
 #include "timer.h"
 
@@ -55,21 +57,25 @@ void combinationsNR(string& soFar,
     
 }
 
-void getDictionaryFromFile() {
-    FILE* file = fopen("../data/dictionary.txt","r");
-    if (!file) {
-	cout << "FAILED TO OPEN FILE!" << endl;
-	exit(-1);
-    }
-    char buf[999];
-    while(fgets(buf, sizeof buf, file) != NULL) {
-	string word(buf);
-	word.pop_back();
-	dictionary.insert(word);
+void getDictionaryFromFile(short maxWordLength) {
+    //auto id_read = Timer::timerBegin();
+    vector<string> dictVector;
+    std::ifstream file;
+    file.open("../data/dictionary.txt");
 
+    string word;
+    while(getline(file,word)) {
+	if (word.size() > maxWordLength) { // Word isn't useful if it's over the max word length
+	    continue;
+	}
+	dictVector.push_back(word);
     }
+    //auto time_read = Timer::timerEnd(id_read);
+    //auto id_put = Timer::timerBegin();
 
-    fclose(file);
+    dictionary = set<string>(dictVector.begin(), dictVector.end());
+    //auto time_put_in_dictionary = Timer::timerEnd(id_put);
+    //cout << "id read " << time_read << " id put " << time_put_in_dictionary << endl; exit(0);
 }
 
 int main(int argc, char* argv[]) {
@@ -78,12 +84,12 @@ int main(int argc, char* argv[]) {
     string currentGuess;
     short bestScore = 0;
     string letters(argv[1]);
-    getDictionaryFromFile();
-	
+    getDictionaryFromFile(letters.size());
+
     combinationsNR(currentGuess, letters, bestWord, bestScore);
 
     auto time = Timer::timerEnd(id);
-
     cout << "plusuncold, C++, " << bestWord << ", " << bestScore << ", "
 	      << time / 1000 << "," << endl;
+    return 0;
 }
