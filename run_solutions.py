@@ -298,6 +298,8 @@ def consolidate_corrects(results):
             else:
                 t = OrderedDict([
                     ('Author', u),
+                    ('Word', ' '),
+                    ('Score', 0),
                     ('Time (ms)', max(r['Time (ms)'] for r in result)),
                     ('Notes','Max time penalty applied')
                 ])
