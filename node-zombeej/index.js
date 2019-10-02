@@ -17,22 +17,26 @@ const readInterface = readline.createInterface({
 })
 
 let bestword = ['', 0]
-let numwords = 0
+// let numwords = 0
 
 function checkWord (word) {
   let ck = [...LETTERS]
   let wd = word.split('')
   let total = 0
-  word.split('').forEach(l => {
+  let w = 0
+  for (w; w < word.length; w++) {
+    const l = word[w]
     const i = ck.indexOf(l)
     if (i > -1) {
+      // console.log(word, l, i, ck.length, ck)
       ck.splice(i, 1)
-      wd.splice(0, 1)
       total = total + VALUES[l].score 
+    } else {
+      break
     }
-    // console.log(word, l, i, ck.length, ck)
-  })
-  if (wd.length) {
+  }
+  
+  if (word.length - w > 0) {
     return false
   }
   // console.log(word)
@@ -43,7 +47,7 @@ function checkWord (word) {
 
 readInterface.on('line', line => {
   if (line.length <= LETTERS.length) {
-    numwords ++
+    // numwords ++
     checkWord(line)
   }
 })
