@@ -16,6 +16,27 @@ const readJSONFile = async filePath => {
   return JSON.parse(data)
 }
 
+const getLetterCount = str => {
+  return str.split('').reduce((acc, letter) => {
+    acc[letter] = acc[letter] + 1 || 1
+    return acc
+  }, {})
+}
+
+const isTooManyLetters = (word, input) => {
+  const maxCount = getLetterCount(input)
+  const letterCount = getLetterCount(word)
+  const letters = Object.keys(letterCount)
+
+  for (let i = 0; i < letters.length; i++) {
+    const letter = letters[i]
+    if (letterCount[letter] > maxCount[letter]) {
+      return true
+    }
+  }
+  return false
+}
+
 const scoreWord = (word, dict, minScore) => {
   let score = word.split('')
     .map(letter => {
@@ -43,27 +64,6 @@ const writeOutput = (winner) => {
   console.log(OUTPUTS.join(', '))
 }
 
-const getLetterCount = str => {
-  return str.split('').reduce((acc, letter) => {
-    acc[letter] = acc[letter] + 1 || 1
-    return acc
-  }, {})
-}
-
-const isTooManyLetters = (word, input) => {
-  const maxCount = getLetterCount(input)
-  const letterCount = getLetterCount(word)
-  const letters = Object.keys(letterCount)
-
-  for (let i = 0; i < letters.length; i++) {
-    const letter = letters[i]
-    if (letterCount[letter] > maxCount[letter]) {
-      return true
-    }
-  }
-  return false
-}
-
 const getBestWord = async inputLetters => {
   const inputStream = fs.createReadStream(dataPath + '/dictionary.txt')
         reader = readline.createInterface({ input: inputStream })
@@ -74,9 +74,9 @@ const getBestWord = async inputLetters => {
   let topWord = { score: 0, word: null }
 
   reader.on('line', line => {
-    if (line.length > inputLetters.length) { return }
-    if (invalidCharRegex.test(line)) { return }
-    if (isTooManyLetters(line, inputLetters)) { return }
+    if (line.length > inputLetters.length) return
+    if (invalidCharRegex.test(line)) return
+    if (isTooManyLetters(line, inputLetters)) return
 
     const contender = scoreWord(line, lettersDict, topWord.score)
     if (contender.score > topWord.score) { topWord = contender }
