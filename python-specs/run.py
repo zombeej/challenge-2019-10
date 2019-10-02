@@ -41,8 +41,8 @@ start = time() * 1000
 
 # load data
 with open(os.path.join(DATA, 'dictionary.txt')) as f:
-    WORDS = [w.strip() for w in f.readlines()
-             if len(w.strip()) <= len(input_letters)]
+    WORDS = {w.strip() for w in f.readlines()
+             if len(w.strip()) <= len(input_letters)}
 
 with open(os.path.join(DATA, 'letters.json'))as f:
     LETTERS = json.load(f)
