@@ -6,6 +6,7 @@
 #include <ctime>
 #include <string>
 #include <set>
+#include <vector>
 
 #include "timer.h"
 
@@ -56,20 +57,21 @@ void combinationsNR(string& soFar,
 }
 
 void getDictionaryFromFile() {
+    //auto id_read = Timer::timerBegin();
+    vector<string> dictVector;
     FILE* file = fopen("../data/dictionary.txt","r");
-    if (!file) {
-	cout << "FAILED TO OPEN FILE!" << endl;
-	exit(-1);
-    }
-    char buf[999];
+    char buf[50];
     while(fgets(buf, sizeof buf, file) != NULL) {
 	string word(buf);
 	word.pop_back();
-	dictionary.insert(word);
-
+	dictVector.push_back(word);
     }
+    //auto time_read = Timer::timerEnd(id_read);
+    //auto id_put = Timer::timerBegin();
 
-    fclose(file);
+    dictionary.insert(dictVector.begin(), dictVector.end());
+    //auto time_put_in_dictionary = Timer::timerEnd(id_put);
+    //cout << "id read " << time_read << " id put " << time_put_in_dictionary << endl; exit(0);
 }
 
 int main(int argc, char* argv[]) {
@@ -79,11 +81,11 @@ int main(int argc, char* argv[]) {
     short bestScore = 0;
     string letters(argv[1]);
     getDictionaryFromFile();
-	
+
     combinationsNR(currentGuess, letters, bestWord, bestScore);
 
     auto time = Timer::timerEnd(id);
-
     cout << "plusuncold, C++, " << bestWord << ", " << bestScore << ", "
 	      << time / 1000 << "," << endl;
+    return 0;
 }
