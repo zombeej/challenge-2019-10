@@ -1,6 +1,6 @@
 # The Reformed Devs Monthly Challenge
 
-## Month Year
+## October 2019
 
 ### Background
 
@@ -63,22 +63,28 @@ See the `example` directory for more guidance.
 
 ### Running the Tests (I.e. Docker and Stuff)
 
-The Docker image currently supports these languages:
+The Docker image is now moved to its own repo and is hosted on Dockerhub.
+
+* [Source](https://github.com/ReformedDevs/challenge-docker)
+* [Dockerhub](https://hub.docker.com/r/drewpearce/trd-challenge)
+
+The image tagged 2019.10 currently supports these languages:
 
 * C/C++
-* Python 3.6
-* Go 1.12.8
-* Rust
 * Node 11
-* PHP 7.2
+* Python 3.6
+* Ruby
+* Rust
+
+If you want to add support for another language, you can make a PR to the Source repo referenced above. If you need help, come on over to the #monthly-challenge channel on our Slack.
 
 You can build the container locally by running `./build_docker.sh`.
 
 You can run the container lcoally by running `./run_docker.sh` after building the container.
 
-You can run the tests locally (assuming you have all the language support installed) by running `python run_tests.py`.
+You can run the tests locally (assuming you have all the language support installed) by running `python(3) run_solutions.py`.
 
-If you only want to run specific directories on a local run (i.e. just test your solution), run `python run_tests.py comma-separated,list-of,solution-dirs`.
+If you only want to run specific directories on a local run (i.e. just test your solution), run `python(3) run_solutions.py comma-separated,list-of,solution-dirs`.
 
 ### Leaderboard
 
