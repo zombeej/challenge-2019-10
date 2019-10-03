@@ -4,8 +4,6 @@ use std::io::{prelude::*, BufReader};
 use std::time;
 use hashbrown::HashMap;
 
-type Dictionary = Vec<Word>;
-
 #[derive(Debug)]
 #[derive(Clone)]
 struct Word {
@@ -47,12 +45,12 @@ impl Word{
         let mut difference = HashMap::new();
         let mut word = self.decompose();
         for c in alphabet.chars() {
-            *difference.entry(c).or_insert(0) =
-                *word.entry(c).or_insert(0) as isize -
+            let diff = *word.entry(c).or_insert(0) as isize -
                 *compared.entry(c).or_insert(0) as isize;
-            if *difference.get(&c).unwrap() < 0 {
+            if diff < 0 {
                 return false
             }
+            *difference.entry(c).or_insert(0) = diff;
         }
         true
     }
