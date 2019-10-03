@@ -71,21 +71,13 @@ fn fetch_dictionary(path: String, length: usize) -> Dictionary {
     dictionary
 }
 
-fn find_words(dictionary: Dictionary, tiles: Word) -> Dictionary {
-    let mut potential_words = vec![];
-    for word in dictionary {
-        if tiles.compare(word.decompose()) {
-            potential_words.push(word);
-        }
-    }
-    potential_words
-}
-
-fn find_best(dictionary: Dictionary) -> Word {
+fn find_best(dictionary: Dictionary, tiles: Word) -> Word {
     let mut best = Word::new("a".to_string());
     for word in dictionary {
         if word.score() > best.score() {
-            best = word;
+            if tiles.compare(word.decompose()) {
+                best = word;
+            }
         }
     }
     best
@@ -95,8 +87,7 @@ fn main() {
     let start = time::Instant::now();
     let tiles = Word::new(env::args().nth(1).unwrap().to_string());
     let dictionary: Dictionary = fetch_dictionary("../data/dictionary.txt".to_string(), tiles.len());
-    let potential_words: Dictionary = find_words(dictionary, tiles);
-    let best = find_best(potential_words);
+    let best = find_best(dictionary, tiles);
     let elapsed = start.elapsed();
     let ms = ((elapsed.as_secs() as f64) + (elapsed.subsec_nanos() as f64 / 1_000_000_000.0)) * 1000.0;
     println!("pard68, Rust, {}, {}, {}, Decomposition", best.word, best.score(), ms)
