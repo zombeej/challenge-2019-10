@@ -16,17 +16,13 @@ def get_test_dirs():
     # get the list of directories to run tests on
     #  if provided on the command line
     if len(sys.argv) > 1:
-        return [
-            d for d in sys.argv[1].split(',')
-            if '-' in d and len(d.split('-')) == 2
-        ]
+        return [d for d in sys.argv[1].split(',')]
     # else get all of em
     else:
         return [
             os.path.join(DIR, d) for d in os.listdir(DIR)
             if os.path.isdir(os.path.join(DIR, d))
             and '-' in d
-            and len(d.split('-')) == 2
         ]
 
 
