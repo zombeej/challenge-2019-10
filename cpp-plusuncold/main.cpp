@@ -75,20 +75,21 @@ map<char,short> lettersToMap(char* letters) {
     return lettersMap;
 }
 
-bool lettersCanMadeWordWithoutCardinality(const string& word,
-					  map<char,short>& letters) {
-    for (int i = 0 ; i < word.size() ; i++) {
+bool lettersCanMadeWord(const string& word,
+			map<char,short>& letters) {
+    const short wordLength = word.size();
+
+    // Deregarding cardinality
+    
+    for (int i = 0 ; i < wordLength ; i++) {
 	if (!letters.count(word[i])) {
 	    return false;
 	}
     }
-    return true;
-}
 
-bool lettersCanMadeWordWithCardinality(string word,
-				       map<char,short>& letters) {
+    // With regard to cardinality
     map<char,short> occurrences;
-    for (int i = 0 ; i < word.size() ; i++) {
+    for (int i = 0 ; i < wordLength ; i++) {
 	if (occurrences.count(word[i])) {
 	    occurrences[word[i]]++;
 	} else {
@@ -96,14 +97,16 @@ bool lettersCanMadeWordWithCardinality(string word,
 	}
     }
 
-    for (const auto letterOccurrence : occurrences) {
+    for (const auto& letterOccurrence : occurrences) {
 	short occurrence = letterOccurrence.second;
 	if (occurrence == 1) {
 	    continue;
 	}
-	char letter = letterOccurrence.first;
 
-	if (letters[letter] < occurrence) {
+	// If there are fewer occurrences of the letter in the
+	// input set than the current test word the current
+	// test word cannot be made with the letters
+	if (letters[letterOccurrence.first] < occurrence) {
 	    return false;
 	}
     }
@@ -114,10 +117,12 @@ bool lettersCanMadeWordWithCardinality(string word,
 
 tuple<string,short> getDictionaryFromFile(map<char,short> letters) {
     //auto id_read = Timer::timerBegin();
-    short maxWordLength = 0;
+    short maxWordLength = 0, maxPossibleScore = 0;
     for (const auto& l : letters) {
 	maxWordLength += l.second;
+	maxPossibleScore += valueForLetter(l.first) * l.second;
     }
+    
     vector<string> dictVector;
     std::ifstream file;
     file.open("../data/dictionary.txt");
@@ -131,14 +136,12 @@ tuple<string,short> getDictionaryFromFile(map<char,short> letters) {
 	score = scoreForVector(word);
 	//cout << word << " " << score << " " << bestScore << endl;
 	if (score > bestScore) {
-	    if (lettersCanMadeWordWithoutCardinality(word, letters)) {
-		if (lettersCanMadeWordWithCardinality(word, letters)) {
-		    //if (score == maxPossibleScore) { // i.e. if all the letters are used
-		    //	return {word, score};
-		    //}
-		    bestWord = word;
-		    bestScore = score;
+	    if (lettersCanMadeWord(word, letters)) {
+		if (score == maxPossibleScore) { // i.e. if all the letters are used
+		    return {word, score};
 		}
+		bestWord = word;
+		bestScore = score;
 	    }
 	}
     }
