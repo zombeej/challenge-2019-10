@@ -88,18 +88,18 @@ If you only want to run specific directories on a local run (i.e. just test your
 
 ### Leaderboard
 
-__Inputs__: _tixeq, hhzu, dbzswy, pfhtufb, zgpy_
+__Inputs__: _khmcsy, awmbwza, ctenkbo, pdiso, nvtvwi_
 
 Author | Language | Word | Score | Time (ms) | Notes
 --- | --- | --- | --- | --- | ---
-plusuncold | C++ | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 11.040000000000001 | 
-pard68 | Rust | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 28.623023760000002 | Decomposition
-cork | Node | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 62.26523175999999 | Put some FP and async on it
-cco3 | javascript | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 64.23999999999998 | sparse arrays
-zombeej | Node | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 72.28 | hoooo doggy
-specs | Python 3 | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 73.6936328125 | strolling down the yeet
-Kyle Nweeia | Python 3 | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 104.6180451600015 | 
-basking2 | ruby | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 107.78643554687498 | ARG: ["tixeq"]
-cco3 | javascript | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 163.8 | obscure
-pard68 | Python3 | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 183.9643907999985 | gotta eat your yeeties!
+plusuncold | C++ | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 8.040000000000001 | 
+pard68 | Rust | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 39.47611816 | Decomposition
+cork | Node | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 63.59243048 | Put some FP and async on it
+cco3 | javascript | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 65.08 | sparse arrays
+zombeej | Node | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 74.0 | hoooo doggy
+specs | Python 3 | sky, maza, beckon, pod, vint | 10, 15, 14, 6, 7 | 77.45537109375 | strolling down the yeet
+Kyle Nweeia | Python 3 | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 101.28510688000127 | 
+basking2 | ruby | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 107.12933593749999 | ARG: ["khmcsy"]
+cco3 | javascript | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 162.44 | obscure
+pard68 | Python3 | sky, maza, beckon, pod, vint | 10, 15, 14, 6, 7 | 263.31069891999925 | gotta eat your yeeties!
 
