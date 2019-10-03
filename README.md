@@ -88,16 +88,18 @@ If you only want to run specific directories on a local run (i.e. just test your
 
 ### Leaderboard
 
-__Inputs__: _tyeyga, pludetm, bbrol, nrjcre, hpri_
+__Inputs__: _tixeq, hhzu, dbzswy, pfhtufb, zgpy_
 
 Author | Language | Word | Score | Time (ms) | Notes
 --- | --- | --- | --- | --- | ---
-plusuncold | C++ | gyte, plumed, brob, j, hip | 8, 11, 8, 8, 8 | 15.4 | 
-pard68 | Rust | gyte, dumple, blob, j, hip | 8, 11, 8, 8, 8 | 37.52156408 | Decomposition
-specs | Python 3 | gyte, plumed, brob, j, hip | 8, 11, 8, 8, 8 | 62.97565429687501 | strolling down the yeet
-cork | Node | gyte, dumple, blob, j, hip | 8, 11, 8, 8, 8 | 78.63653200000002 | Put some FP and async on it
-cco3 | javascript | gyte, dumple, blob, j, hip | 8, 11, 8, 8, 8 | 80.36 | sparse arrays
-zombeej | Node | gyte, dumple, blob, j, hip | 8, 11, 8, 8, 8 | 88.47999999999999 | hoooo doggy
-basking2 | ruby | gyte, dumple, blob, j, hip | 8, 11, 8, 8, 8 | 100.98484375 | ARG: ["tyeyga"]
-pard68 | Python3 | gyte, dumple, brob, j, hip | 8, 11, 8, 8, 8 | 157.89148959999977 | gotta eat your yeeties!
+plusuncold | C++ | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 11.040000000000001 | 
+pard68 | Rust | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 28.623023760000002 | Decomposition
+cork | Node | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 62.26523175999999 | Put some FP and async on it
+cco3 | javascript | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 64.23999999999998 | sparse arrays
+zombeej | Node | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 72.28 | hoooo doggy
+specs | Python 3 | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 73.6936328125 | strolling down the yeet
+Kyle Nweeia | Python 3 | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 104.6180451600015 | 
+basking2 | ruby | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 107.78643554687498 | ARG: ["tixeq"]
+cco3 | javascript | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 163.8 | obscure
+pard68 | Python3 | exit, z, z, huff, z | 11, 10, 10, 13, 10 | 183.9643907999985 | gotta eat your yeeties!
 
