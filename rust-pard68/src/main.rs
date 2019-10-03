@@ -58,25 +58,17 @@ impl Word{
     }
 }
 
-fn fetch_dictionary(path: String, length: usize) -> Dictionary {
-    let mut dictionary = vec![];
+fn find_best(path: String, tiles: Word) -> Word {
+    let mut best = Word::new("a".to_string());
     let file = File::open(path).unwrap();
     let reader = BufReader::new(file);
     for line in reader.lines() {
         let word = Word::new(line.unwrap());
-        if word.len() <= length {
-            dictionary.push(word);
-        }
-    }
-    dictionary
-}
-
-fn find_best(dictionary: Dictionary, tiles: Word) -> Word {
-    let mut best = Word::new("a".to_string());
-    for word in dictionary {
-        if word.score() > best.score() {
-            if tiles.compare(word.decompose()) {
-                best = word;
+        if word.len() <= tiles.len() {
+            if word.score() > best.score() {
+                if tiles.compare(word.decompose()) {
+                    best = word;
+                }
             }
         }
     }
@@ -86,8 +78,7 @@ fn find_best(dictionary: Dictionary, tiles: Word) -> Word {
 fn main() {
     let start = time::Instant::now();
     let tiles = Word::new(env::args().nth(1).unwrap().to_string());
-    let dictionary: Dictionary = fetch_dictionary("../data/dictionary.txt".to_string(), tiles.len());
-    let best = find_best(dictionary, tiles);
+    let best = find_best("../data/dictionary.txt".to_string(), tiles);
     let elapsed = start.elapsed();
     let ms = ((elapsed.as_secs() as f64) + (elapsed.subsec_nanos() as f64 / 1_000_000_000.0)) * 1000.0;
     println!("pard68, Rust, {}, {}, {}, Decomposition", best.word, best.score(), ms)
