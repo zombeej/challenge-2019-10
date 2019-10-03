@@ -75,8 +75,7 @@ fn find_best(path: String, tiles: Word) -> Word {
 
 fn main() {
     let start = time::Instant::now();
-    let tiles = Word::new(env::args().nth(1).unwrap().to_string());
-    let best = find_best("../data/dictionary.txt".to_string(), tiles);
+    let best = find_best("../data/dictionary.txt".to_string(), Word::new(env::args().nth(1).unwrap().to_string()));
     let elapsed = start.elapsed();
     let ms = ((elapsed.as_secs() as f64) + (elapsed.subsec_nanos() as f64 / 1_000_000_000.0)) * 1000.0;
     println!("pard68, Rust, {}, {}, {}, Decomposition", best.word, best.score(), ms)
