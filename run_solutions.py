@@ -99,7 +99,7 @@ def build_test(d):
 def run_test(d, test_case):
     test_out = os.popen(f'cd {d} && bash run.sh {test_case}').read().strip()
     print(f'    {test_out}')
-    return parse_result(test_out)
+    return parse_result(test_out, identifier=d)
 
 
 def get_test_results(d, test_case):
@@ -185,13 +185,23 @@ def data_to_md_table(data, ordered_fields, title=None, sort_field=None,
     return out
 
 
-def update_readme(inputs, correct, incorrect):
+def update_readme(inputs, correct, incorrect, c_exclude=None):
     inputs = ', '.join(inputs)
     readme = get_readme()
     readme = strip_current_results(readme)
 
     if correct:
         fields = list(correct[0].keys())
+        if c_exclude:
+            if isinstance(c_exclude, string_types):
+                c_exclude = [c_exclude]
+            if isinstance(c_exclude, list):
+                for f in c_exclude:
+                    try:
+                        fields.remove(f)
+                    except Exception:
+                        print(f'Cannot remove {f} from fields.')
+            
         extra = f'__Inputs__: _{inputs}_'
         readme += data_to_md_table(correct, fields, title='### Leaderboard',
                                    sort_field=RANKING_FIELD, extra=extra)
@@ -237,7 +247,7 @@ def dump_json_results(results):
         json.dump(results, f, indent=2)
 
 
-def parse_result(result):
+def parse_result(result, identifier=None):
     result = [r.strip() for r in result.split(',')]
     out = OrderedDict()
     for i, f in enumerate(FIELDS):
@@ -248,6 +258,9 @@ def parse_result(result):
             v = float(v)
 
         out[f] = v
+
+    if identifier:
+        out['id'] = identifier
 
     return out
 
@@ -280,24 +293,26 @@ def split_results(results):
     return correct, incorrect
 
 
-def consolidate_corrects(results):
+def consolidate_corrects(results, identifier=None):
     out = OrderedDict()
     all_c = []
     for k, v in results.items():
         all_c += v
 
-    users = set([x['Author'] for x in all_c])
+    if not identifier:
+        identifier = 'id'
+    ids = set([x[identifier] for x in all_c])
     for case, result in results.items():
         temp = []
-        for u in users:
-            match = [r for r in result if r['Author'] == u]
+        for i in ids:
+            match = [r for r in result if r[identifier] == i]
             if match:
                 t = match[0]
                 t['Time (ms)'] = \
                     sum(m['Time (ms)'] for m in match) / len(match)
             else:
                 t = OrderedDict([
-                    ('Author', u),
+                    ('ID', i),
                     ('Word', ' '),
                     ('Score', 0),
                     ('Time (ms)', max(r['Time (ms)'] for r in result)),
@@ -311,8 +326,8 @@ def consolidate_corrects(results):
         all_c += v
 
     temp = []
-    for u in users:
-        match = [r for r in all_c if r['Author'] == u]
+    for i in ids:
+        match = [r for r in all_c if r[identifier] == i]
         t = match[0]
         t['Word'] = ', '.join(m['Word'] for m in match)
         t['Score'] = ', '.join(str(m['Score']) for m in match)
@@ -324,14 +339,16 @@ def consolidate_corrects(results):
     return out
 
 
-def consolidate_incorrects(results):
+def consolidate_incorrects(results, identifier=None):
     out = []
+    if not identifier:
+        identifier = 'id'
     for case, r_set in results.items():
-        users = set([r['Author'] for r in r_set])
-        for u in users:
-            match = [r for r in r_set if r['Author'] == u]
+        ids = set([r[identifier] for r in r_set])
+        for i in ids:
+            match = [r for r in r_set if r[identifier] == i]
             t = OrderedDict([
-                ('Author', u),
+                ('ID', i),
                 ('Input', case),
                 ('Words', ', '.join(m['Word'] for m in match)),
                 ('Scores', ', '.join(str(m['Score']) for m in match))
@@ -366,5 +383,6 @@ if __name__ == '__main__':
     dump_json_results(master_results)
     print('\nUpdating README.md...')
     inputs = list(correct.keys())
-    update_readme(inputs, master_results['Overall Rankings'], incorrect)
+    update_readme(inputs, master_results['Overall Rankings'], incorrect,
+                  c_exclude='id')
     print('\nDone')
