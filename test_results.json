@@ -3,2257 +3,2815 @@
     {
       "Author": "plusuncold",
       "Language": "C++",
-      "Word": "gyte, plumed, brob, j, hip",
-      "Score": "8, 11, 8, 8, 8",
-      "Time (ms)": 15.4,
+      "Word": "exit, z, z, huff, z",
+      "Score": "11, 10, 10, 13, 10",
+      "Time (ms)": 11.040000000000001,
       "Notes": "",
       "id": "/home/repo/cpp-plusuncold"
     },
     {
       "Author": "pard68",
       "Language": "Rust",
-      "Word": "gyte, dumple, blob, j, hip",
-      "Score": "8, 11, 8, 8, 8",
-      "Time (ms)": 37.52156408,
+      "Word": "exit, z, z, huff, z",
+      "Score": "11, 10, 10, 13, 10",
+      "Time (ms)": 28.623023760000002,
       "Notes": "Decomposition",
       "id": "/home/repo/rust-pard68"
     },
     {
-      "Author": "specs",
-      "Language": "Python 3",
-      "Word": "gyte, plumed, brob, j, hip",
-      "Score": "8, 11, 8, 8, 8",
-      "Time (ms)": 62.97565429687501,
-      "Notes": "strolling down the yeet",
-      "id": "/home/repo/python-specs"
-    },
-    {
       "Author": "cork",
       "Language": "Node",
-      "Word": "gyte, dumple, blob, j, hip",
-      "Score": "8, 11, 8, 8, 8",
-      "Time (ms)": 78.63653200000002,
+      "Word": "exit, z, z, huff, z",
+      "Score": "11, 10, 10, 13, 10",
+      "Time (ms)": 62.26523175999999,
       "Notes": "Put some FP and async on it",
       "id": "/home/repo/node-cork"
     },
     {
       "Author": "cco3",
       "Language": "javascript",
-      "Word": "gyte, dumple, blob, j, hip",
-      "Score": "8, 11, 8, 8, 8",
-      "Time (ms)": 80.36,
+      "Word": "exit, z, z, huff, z",
+      "Score": "11, 10, 10, 13, 10",
+      "Time (ms)": 64.23999999999998,
       "Notes": "sparse arrays",
       "id": "/home/repo/javascript-cco3"
     },
     {
       "Author": "zombeej",
       "Language": "Node",
-      "Word": "gyte, dumple, blob, j, hip",
-      "Score": "8, 11, 8, 8, 8",
-      "Time (ms)": 88.47999999999999,
+      "Word": "exit, z, z, huff, z",
+      "Score": "11, 10, 10, 13, 10",
+      "Time (ms)": 72.28,
       "Notes": "hoooo doggy",
       "id": "/home/repo/node-zombeej"
     },
     {
+      "Author": "specs",
+      "Language": "Python 3",
+      "Word": "exit, z, z, huff, z",
+      "Score": "11, 10, 10, 13, 10",
+      "Time (ms)": 73.6936328125,
+      "Notes": "strolling down the yeet",
+      "id": "/home/repo/python-specs"
+    },
+    {
+      "Author": "Kyle Nweeia",
+      "Language": "Python 3",
+      "Word": "exit, z, z, huff, z",
+      "Score": "11, 10, 10, 13, 10",
+      "Time (ms)": 104.6180451600015,
+      "Notes": "",
+      "id": "/home/repo/python-kyle-nweeia"
+    },
+    {
       "Author": "basking2",
       "Language": "ruby",
-      "Word": "gyte, dumple, blob, j, hip",
-      "Score": "8, 11, 8, 8, 8",
-      "Time (ms)": 100.98484375,
-      "Notes": "ARG: [\"tyeyga\"]",
+      "Word": "exit, z, z, huff, z",
+      "Score": "11, 10, 10, 13, 10",
+      "Time (ms)": 107.78643554687498,
+      "Notes": "ARG: [\"tixeq\"]",
       "id": "/home/repo/ruby-basking2"
+    },
+    {
+      "Author": "cco3",
+      "Language": "javascript",
+      "Word": "exit, z, z, huff, z",
+      "Score": "11, 10, 10, 13, 10",
+      "Time (ms)": 163.8,
+      "Notes": "obscure",
+      "id": "/home/repo/javascript-obscure-cco3"
     },
     {
       "Author": "pard68",
       "Language": "Python3",
-      "Word": "gyte, dumple, brob, j, hip",
-      "Score": "8, 11, 8, 8, 8",
-      "Time (ms)": 157.89148959999977,
+      "Word": "exit, z, z, huff, z",
+      "Score": "11, 10, 10, 13, 10",
+      "Time (ms)": 183.9643907999985,
       "Notes": "gotta eat your yeeties!",
       "id": "/home/repo/python-pard68"
     }
   ],
   "Correct": {
-    "tyeyga": [
+    "tixeq": [
       {
         "Author": "plusuncold",
         "Language": "C++",
-        "Word": "gyte, plumed, brob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 15.4,
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 11.040000000000001,
         "Notes": "",
         "id": "/home/repo/cpp-plusuncold"
       },
       {
         "Author": "pard68",
         "Language": "Rust",
-        "Word": "gyte, dumple, blob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 37.52156408,
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 28.623023760000002,
         "Notes": "Decomposition",
         "id": "/home/repo/rust-pard68"
       },
       {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "gyte, plumed, brob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 62.97565429687501,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "gyte, dumple, blob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 80.36,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
         "Author": "cork",
         "Language": "Node",
-        "Word": "gyte, dumple, blob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 78.63653200000002,
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 62.26523175999999,
         "Notes": "Put some FP and async on it",
         "id": "/home/repo/node-cork"
       },
       {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 64.23999999999998,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
         "Author": "zombeej",
         "Language": "Node",
-        "Word": "gyte, dumple, blob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 88.47999999999999,
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 72.28,
         "Notes": "hoooo doggy",
         "id": "/home/repo/node-zombeej"
       },
       {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 73.6936328125,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
         "Author": "basking2",
         "Language": "ruby",
-        "Word": "gyte, dumple, blob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 100.98484375,
-        "Notes": "ARG: [\"tyeyga\"]",
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 107.78643554687498,
+        "Notes": "ARG: [\"tixeq\"]",
         "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 104.6180451600015,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
       },
       {
         "Author": "pard68",
         "Language": "Python3",
-        "Word": "gyte, dumple, brob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 157.89148959999977,
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 183.9643907999985,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 163.8,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      }
+    ],
+    "hhzu": [
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 8.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 20.7788488,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 43.115182999997614,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 60.7455604,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 64.6,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 64.8,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 66.0125,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 92.78576760000142,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 108.50810546875,
+        "Notes": "ARG: [\"hhzu\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 162.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      }
+    ],
+    "dbzswy": [
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 13.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 43.733199,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 62.839081,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 63.2,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 76.0064453125,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 79.4,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 102.15558260000543,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 109.805029296875,
+        "Notes": "ARG: [\"dbzswy\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 164.4,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 316.2883667999978,
         "Notes": "gotta eat your yeeties!",
         "id": "/home/repo/python-pard68"
       }
     ],
-    "pludetm": [
+    "pfhtufb": [
       {
         "Author": "plusuncold",
         "Language": "C++",
-        "Word": "plumed",
-        "Score": 11,
-        "Time (ms)": 19.0,
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 16.2,
         "Notes": "",
         "id": "/home/repo/cpp-plusuncold"
       },
       {
         "Author": "pard68",
         "Language": "Rust",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 45.6944048,
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 34.4911676,
         "Notes": "Decomposition",
         "id": "/home/repo/rust-pard68"
       },
       {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "plumed",
-        "Score": 11,
-        "Time (ms)": 72.76845703125,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 79.2,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
         "Author": "cork",
         "Language": "Node",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 85.222266,
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 64.64274979999999,
         "Notes": "Put some FP and async on it",
         "id": "/home/repo/node-cork"
       },
       {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 67.4,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 82.7982421875,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
         "Author": "zombeej",
         "Language": "Node",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 97.4,
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 83.0,
         "Notes": "hoooo doggy",
         "id": "/home/repo/node-zombeej"
       },
       {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 107.42944119999883,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
         "Author": "basking2",
         "Language": "ruby",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 102.758837890625,
-        "Notes": "ARG: [\"pludetm\"]",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 108.187890625,
+        "Notes": "ARG: [\"pfhtufb\"]",
         "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 164.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
       },
       {
         "Author": "pard68",
         "Language": "Python3",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 404.12997059999617,
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 325.0307113999952,
         "Notes": "gotta eat your yeeties!",
         "id": "/home/repo/python-pard68"
       }
     ],
-    "bbrol": [
+    "zgpy": [
       {
         "Author": "plusuncold",
         "Language": "C++",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 8.8,
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 8.2,
         "Notes": "",
         "id": "/home/repo/cpp-plusuncold"
       },
       {
         "Author": "pard68",
         "Language": "Rust",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 29.4657432,
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 20.6197416,
         "Notes": "Decomposition",
         "id": "/home/repo/rust-pard68"
       },
       {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 62.697911399999995,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 63.4,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 65.4,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
         "Author": "specs",
         "Language": "Python 3",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 56.98798828125,
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 66.117041015625,
         "Notes": "strolling down the yeet",
         "id": "/home/repo/python-specs"
       },
       {
         "Author": "pard68",
         "Language": "Python3",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 64.16724940000051,
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 78.50822100000414,
         "Notes": "gotta eat your yeeties!",
         "id": "/home/repo/python-pard68"
       },
       {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 73.83187419999999,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 78.2,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 82.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 100.437890625,
-        "Notes": "ARG: [\"bbrol\"]",
-        "id": "/home/repo/ruby-basking2"
-      }
-    ],
-    "nrjcre": [
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 16.8,
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 92.39032100000186,
         "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 39.775487399999996,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 63.112255859375,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 74.51565020000001,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 80.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 91.6,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
+        "id": "/home/repo/python-kyle-nweeia"
       },
       {
         "Author": "basking2",
         "Language": "ruby",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 100.958837890625,
-        "Notes": "ARG: [\"nrjcre\"]",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 105.804150390625,
+        "Notes": "ARG: [\"zgpy\"]",
         "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 131.72018800000842,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      }
-    ],
-    "hpri": [
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 12.8,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 24.5098582,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 54.715087890625,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 58.83152339999924,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 73.1451402,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
       },
       {
         "Author": "cco3",
         "Language": "javascript",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 80.8,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 84.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 99.999072265625,
-        "Notes": "ARG: [\"hpri\"]",
-        "id": "/home/repo/ruby-basking2"
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 164.8,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
       }
     ]
   },
   "Incorrect": [],
   "Raw results": {
-    "tyeyga": [
+    "tixeq": [
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 104.6180451600015,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 93.67553599999519,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 114.52935299999808,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 202.59821199999715,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 136.4561640000029,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
       {
         "Author": "zombeej",
         "Language": "Node",
-        "Word": "gyte, dumple, blob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 88.47999999999999,
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 72.28,
         "Notes": "hoooo doggy",
         "id": "/home/repo/node-zombeej"
       },
       {
         "Author": "zombeej",
         "Language": "Node",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 90.0,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 68.0,
         "Notes": "hoooo doggy",
         "id": "/home/repo/node-zombeej"
       },
       {
         "Author": "zombeej",
         "Language": "Node",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 83.0,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 61.0,
         "Notes": "hoooo doggy",
         "id": "/home/repo/node-zombeej"
       },
       {
         "Author": "zombeej",
         "Language": "Node",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 101.0,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 65.0,
         "Notes": "hoooo doggy",
         "id": "/home/repo/node-zombeej"
       },
       {
         "Author": "zombeej",
         "Language": "Node",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 99.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "gyte, plumed, brob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 62.97565429687501,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 79.728759765625,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 65.31396484375,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 63.1875,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 61.683837890625,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "gyte, dumple, blob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 78.63653200000002,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 88.035668,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 108.824944,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 91.953227,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 72.033992,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "gyte, plumed, brob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 15.4,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 15.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 23.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 12.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 24.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "gyte, dumple, brob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 157.89148959999977,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 128.8657449999988,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 130.22021099999392,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 128.54442699999424,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 135.67673599999353,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "gyte, dumple, blob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 80.36,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 100.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 74.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 78.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 73.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "gyte, dumple, blob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 37.52156408,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 50.980813,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 46.867684,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 46.902192,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 48.42361399999999,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "gyte, dumple, blob, j, hip",
-        "Score": "8, 11, 8, 8, 8",
-        "Time (ms)": 100.98484375,
-        "Notes": "ARG: [\"tyeyga\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 101.812255859375,
-        "Notes": "ARG: [\"tyeyga\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 101.132080078125,
-        "Notes": "ARG: [\"tyeyga\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 100.148193359375,
-        "Notes": "ARG: [\"tyeyga\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "gyte",
-        "Score": 8,
-        "Time (ms)": 100.574462890625,
-        "Notes": "ARG: [\"tyeyga\"]",
-        "id": "/home/repo/ruby-basking2"
-      }
-    ],
-    "pludetm": [
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 97.4,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 114.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 88.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 103.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 90.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "plumed",
-        "Score": 11,
-        "Time (ms)": 72.76845703125,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "plumed",
-        "Score": 11,
-        "Time (ms)": 72.095703125,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "plumed",
-        "Score": 11,
-        "Time (ms)": 72.988037109375,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "plumed",
-        "Score": 11,
-        "Time (ms)": 72.5322265625,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "plumed",
-        "Score": 11,
-        "Time (ms)": 74.148681640625,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 85.222266,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 94.172649,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 74.951968,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 85.635857,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 88.694878,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "plumed",
-        "Score": 11,
-        "Time (ms)": 19.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "plumed",
-        "Score": 11,
-        "Time (ms)": 22.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "plumed",
-        "Score": 11,
-        "Time (ms)": 16.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "plumed",
-        "Score": 11,
-        "Time (ms)": 14.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "plumed",
-        "Score": 11,
-        "Time (ms)": 16.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 404.12997059999617,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 401.16987099999335,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 403.9535779999994,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 402.826036999997,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "plumed",
-        "Score": 11,
-        "Time (ms)": 410.4035609999954,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 79.2,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 77.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "dumple",
+        "Word": "exit",
         "Score": 11,
         "Time (ms)": 76.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 73.6936328125,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 69.62158203125,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 67.565673828125,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 68.45361328125,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 67.06884765625,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 62.26523175999999,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 60.62971,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 58.091493,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 64.212263,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 58.978722,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
       },
       {
         "Author": "cco3",
         "Language": "javascript",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 72.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 163.8,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
       },
       {
         "Author": "cco3",
         "Language": "javascript",
-        "Word": "dumple",
+        "Word": "exit",
         "Score": 11,
-        "Time (ms)": 92.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 45.6944048,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 41.625851,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 53.362982,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 41.002589,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 42.836490999999995,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 102.758837890625,
-        "Notes": "ARG: [\"pludetm\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 102.7373046875,
-        "Notes": "ARG: [\"pludetm\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 101.828369140625,
-        "Notes": "ARG: [\"pludetm\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 102.701416015625,
-        "Notes": "ARG: [\"pludetm\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "dumple",
-        "Score": 11,
-        "Time (ms)": 104.823974609375,
-        "Notes": "ARG: [\"pludetm\"]",
-        "id": "/home/repo/ruby-basking2"
-      }
-    ],
-    "bbrol": [
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 78.2,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 85.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 72.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 88.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 72.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 56.98798828125,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 56.193359375,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 56.5537109375,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 55.711181640625,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 57.634521484375,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 73.83187419999999,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 70.408347,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 84.734227,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 67.470212,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 66.745237,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 8.8,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 9.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 8.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 8.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 9.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 64.16724940000051,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 63.8235110000096,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 65.18416599999455,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 64.86865600000158,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "brob",
-        "Score": 8,
-        "Time (ms)": 63.749900999994225,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
+        "Time (ms)": 160.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
       },
       {
         "Author": "cco3",
         "Language": "javascript",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 82.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 165.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
       },
       {
         "Author": "cco3",
         "Language": "javascript",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 85.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 162.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
       },
       {
         "Author": "cco3",
         "Language": "javascript",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 79.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 79.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 94.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 29.4657432,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 34.940685,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 22.402009,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 32.439897,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 21.285452,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 100.437890625,
-        "Notes": "ARG: [\"bbrol\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 101.1806640625,
-        "Notes": "ARG: [\"bbrol\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 100.44140625,
-        "Notes": "ARG: [\"bbrol\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 100.100830078125,
-        "Notes": "ARG: [\"bbrol\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "blob",
-        "Score": 8,
-        "Time (ms)": 100.1982421875,
-        "Notes": "ARG: [\"bbrol\"]",
-        "id": "/home/repo/ruby-basking2"
-      }
-    ],
-    "nrjcre": [
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 91.6,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 82.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 99.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 92.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 81.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 63.112255859375,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 63.11572265625,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 64.240966796875,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 63.302490234375,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 62.8544921875,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 74.51565020000001,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 79.905692,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 68.070054,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 72.169502,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 70.610309,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 161.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
       },
       {
         "Author": "plusuncold",
         "Language": "C++",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 16.8,
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 11.040000000000001,
         "Notes": "",
         "id": "/home/repo/cpp-plusuncold"
       },
       {
         "Author": "plusuncold",
         "Language": "C++",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 13.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 24.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 15.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 13.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 131.72018800000842,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 132.3826730000235,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 132.43192999999565,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 131.91088100001025,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Python3",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 130.74949200000674,
-        "Notes": "gotta eat your yeeties!",
-        "id": "/home/repo/python-pard68"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 80.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 81.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 78.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 84.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "cco3",
-        "Language": "javascript",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 80.0,
-        "Notes": "sparse arrays",
-        "id": "/home/repo/javascript-cco3"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 39.775487399999996,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 34.212853,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 36.89047,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 46.04367,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "pard68",
-        "Language": "Rust",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 44.684602,
-        "Notes": "Decomposition",
-        "id": "/home/repo/rust-pard68"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 100.958837890625,
-        "Notes": "ARG: [\"nrjcre\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 100.59765625,
-        "Notes": "ARG: [\"nrjcre\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 100.203369140625,
-        "Notes": "ARG: [\"nrjcre\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 101.904296875,
-        "Notes": "ARG: [\"nrjcre\"]",
-        "id": "/home/repo/ruby-basking2"
-      },
-      {
-        "Author": "basking2",
-        "Language": "ruby",
-        "Word": "j",
-        "Score": 8,
-        "Time (ms)": 101.6572265625,
-        "Notes": "ARG: [\"nrjcre\"]",
-        "id": "/home/repo/ruby-basking2"
-      }
-    ],
-    "hpri": [
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 84.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 84.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 71.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 83.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "zombeej",
-        "Language": "Node",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 83.0,
-        "Notes": "hoooo doggy",
-        "id": "/home/repo/node-zombeej"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 54.715087890625,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 56.25,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 55.4130859375,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 53.186279296875,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "specs",
-        "Language": "Python 3",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 55.3310546875,
-        "Notes": "strolling down the yeet",
-        "id": "/home/repo/python-specs"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 73.1451402,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 71.139113,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 72.797805,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 77.021632,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "cork",
-        "Language": "Node",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 76.039437,
-        "Notes": "Put some FP and async on it",
-        "id": "/home/repo/node-cork"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 12.8,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 17.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 13.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 9.0,
-        "Notes": "",
-        "id": "/home/repo/cpp-plusuncold"
-      },
-      {
-        "Author": "plusuncold",
-        "Language": "C++",
-        "Word": "hip",
-        "Score": 8,
+        "Word": "exit",
+        "Score": 11,
         "Time (ms)": 10.0,
         "Notes": "",
         "id": "/home/repo/cpp-plusuncold"
       },
       {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 10.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 10.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 9.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
         "Author": "pard68",
         "Language": "Python3",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 58.83152339999924,
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 183.9643907999985,
         "Notes": "gotta eat your yeeties!",
         "id": "/home/repo/python-pard68"
       },
       {
         "Author": "pard68",
         "Language": "Python3",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 58.98964799999362,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 157.0401019999963,
         "Notes": "gotta eat your yeeties!",
         "id": "/home/repo/python-pard68"
       },
       {
         "Author": "pard68",
         "Language": "Python3",
-        "Word": "phi",
-        "Score": 8,
-        "Time (ms)": 59.243127000002005,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 155.23090499999626,
         "Notes": "gotta eat your yeeties!",
         "id": "/home/repo/python-pard68"
       },
       {
         "Author": "pard68",
         "Language": "Python3",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 58.288956000012604,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 156.71299499999947,
         "Notes": "gotta eat your yeeties!",
         "id": "/home/repo/python-pard68"
       },
       {
         "Author": "pard68",
         "Language": "Python3",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 58.88604699998723,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 157.47241399999723,
         "Notes": "gotta eat your yeeties!",
         "id": "/home/repo/python-pard68"
       },
       {
         "Author": "cco3",
         "Language": "javascript",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 80.8,
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 64.23999999999998,
         "Notes": "sparse arrays",
         "id": "/home/repo/javascript-cco3"
       },
       {
         "Author": "cco3",
         "Language": "javascript",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 90.0,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 60.0,
         "Notes": "sparse arrays",
         "id": "/home/repo/javascript-cco3"
       },
       {
         "Author": "cco3",
         "Language": "javascript",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 82.0,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 62.0,
         "Notes": "sparse arrays",
         "id": "/home/repo/javascript-cco3"
       },
       {
         "Author": "cco3",
         "Language": "javascript",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 71.0,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 61.0,
         "Notes": "sparse arrays",
         "id": "/home/repo/javascript-cco3"
       },
       {
         "Author": "cco3",
         "Language": "javascript",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 82.0,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 65.0,
         "Notes": "sparse arrays",
         "id": "/home/repo/javascript-cco3"
       },
       {
         "Author": "pard68",
         "Language": "Rust",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 24.5098582,
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 28.623023760000002,
         "Notes": "Decomposition",
         "id": "/home/repo/rust-pard68"
       },
       {
         "Author": "pard68",
         "Language": "Rust",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 20.107585,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 23.358737,
         "Notes": "Decomposition",
         "id": "/home/repo/rust-pard68"
       },
       {
         "Author": "pard68",
         "Language": "Rust",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 26.811772,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 23.540898000000002,
         "Notes": "Decomposition",
         "id": "/home/repo/rust-pard68"
       },
       {
         "Author": "pard68",
         "Language": "Rust",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 29.718287999999998,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 23.520072,
         "Notes": "Decomposition",
         "id": "/home/repo/rust-pard68"
       },
       {
         "Author": "pard68",
         "Language": "Rust",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 18.940552999999998,
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 23.668748,
         "Notes": "Decomposition",
         "id": "/home/repo/rust-pard68"
       },
       {
         "Author": "basking2",
         "Language": "ruby",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 99.999072265625,
-        "Notes": "ARG: [\"hpri\"]",
+        "Word": "exit, z, z, huff, z",
+        "Score": "11, 10, 10, 13, 10",
+        "Time (ms)": 107.78643554687498,
+        "Notes": "ARG: [\"tixeq\"]",
         "id": "/home/repo/ruby-basking2"
       },
       {
         "Author": "basking2",
         "Language": "ruby",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 100.2109375,
-        "Notes": "ARG: [\"hpri\"]",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 105.474609375,
+        "Notes": "ARG: [\"tixeq\"]",
         "id": "/home/repo/ruby-basking2"
       },
       {
         "Author": "basking2",
         "Language": "ruby",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 99.706787109375,
-        "Notes": "ARG: [\"hpri\"]",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 108.113525390625,
+        "Notes": "ARG: [\"tixeq\"]",
         "id": "/home/repo/ruby-basking2"
       },
       {
         "Author": "basking2",
         "Language": "ruby",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 99.9443359375,
-        "Notes": "ARG: [\"hpri\"]",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 104.813720703125,
+        "Notes": "ARG: [\"tixeq\"]",
         "id": "/home/repo/ruby-basking2"
       },
       {
         "Author": "basking2",
         "Language": "ruby",
-        "Word": "hip",
-        "Score": 8,
-        "Time (ms)": 99.62060546875,
-        "Notes": "ARG: [\"hpri\"]",
+        "Word": "exit",
+        "Score": 11,
+        "Time (ms)": 107.718505859375,
+        "Notes": "ARG: [\"tixeq\"]",
+        "id": "/home/repo/ruby-basking2"
+      }
+    ],
+    "hhzu": [
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 92.78576760000142,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 92.67139600000519,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 91.17134799998894,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 92.58095000000321,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 95.8370830000058,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 64.8,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 64.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 63.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 64.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 62.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 66.0125,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 66.759521484375,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 65.86865234375,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 66.023193359375,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 66.562255859375,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 60.7455604,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 61.073413,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 60.322843,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 61.78131,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 60.71218,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 162.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 164.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 163.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 164.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 159.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 8.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 8.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 8.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 8.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 8.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 43.115182999997614,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 43.108094999993796,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 42.10006499999963,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 43.73882699999854,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 42.52358200000117,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 64.6,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 64.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 64.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 65.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 65.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 20.7788488,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 20.918076,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 20.946811999999998,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 20.779276,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 20.875686,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 108.50810546875,
+        "Notes": "ARG: [\"hhzu\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 106.39013671875,
+        "Notes": "ARG: [\"hhzu\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 106.28564453125,
+        "Notes": "ARG: [\"hhzu\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 113.2919921875,
+        "Notes": "ARG: [\"hhzu\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 110.44580078125,
+        "Notes": "ARG: [\"hhzu\"]",
+        "id": "/home/repo/ruby-basking2"
+      }
+    ],
+    "dbzswy": [
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 102.15558260000543,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 102.13137500001176,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 105.36698700000125,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 97.49633200000972,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 107.34379700000864,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 79.4,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 80.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 78.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 78.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 83.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 76.0064453125,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 73.79541015625,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 78.322509765625,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 75.133544921875,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 74.387939453125,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 62.839081,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 61.71349,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 62.587618,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 62.906853,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 59.669585,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 164.4,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 164.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 164.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 167.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 164.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 13.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 13.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 13.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 13.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 13.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 316.2883667999978,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 318.51252699999577,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 315.52323700000784,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 316.8243519999976,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 321.9302739999961,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 63.2,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 60.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 66.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 64.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 62.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 43.733199,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 44.210628,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 43.296044,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 43.784653,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 43.760685,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 109.805029296875,
+        "Notes": "ARG: [\"dbzswy\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 112.950439453125,
+        "Notes": "ARG: [\"dbzswy\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 109.514404296875,
+        "Notes": "ARG: [\"dbzswy\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 107.251708984375,
+        "Notes": "ARG: [\"dbzswy\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 106.177001953125,
+        "Notes": "ARG: [\"dbzswy\"]",
+        "id": "/home/repo/ruby-basking2"
+      }
+    ],
+    "pfhtufb": [
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 107.42944119999883,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 111.50853399999323,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 105.95173000000068,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 107.22903899999801,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 104.68355200000224,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 83.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 83.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 86.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 81.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 84.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 82.7982421875,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 81.47216796875,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 81.245849609375,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 81.807861328125,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 84.40283203125,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 64.64274979999999,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 63.055232,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 64.072353,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 63.55423,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 68.278116,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 164.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 165.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 165.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 160.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 167.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 16.2,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 16.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 16.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 16.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 16.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 325.0307113999952,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 328.8494209999868,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 325.8717880000006,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 325.5143339999904,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 323.71058900000094,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 67.4,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 69.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 66.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 70.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 66.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 34.4911676,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 34.563297,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 34.54728600000001,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 34.415092,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 34.523041,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 108.187890625,
+        "Notes": "ARG: [\"pfhtufb\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 108.845458984375,
+        "Notes": "ARG: [\"pfhtufb\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 108.410400390625,
+        "Notes": "ARG: [\"pfhtufb\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 107.96240234375,
+        "Notes": "ARG: [\"pfhtufb\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "huff",
+        "Score": 13,
+        "Time (ms)": 108.856689453125,
+        "Notes": "ARG: [\"pfhtufb\"]",
+        "id": "/home/repo/ruby-basking2"
+      }
+    ],
+    "zgpy": [
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 92.39032100000186,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 91.66861500000232,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 92.74243399999978,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 92.56380600000557,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "Kyle Nweeia",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 93.47230500000296,
+        "Notes": "",
+        "id": "/home/repo/python-kyle-nweeia"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 65.4,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 67.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 65.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 66.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "zombeej",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 64.0,
+        "Notes": "hoooo doggy",
+        "id": "/home/repo/node-zombeej"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 66.117041015625,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 65.21435546875,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 64.99365234375,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 67.55029296875,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "specs",
+        "Language": "Python 3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 66.19384765625,
+        "Notes": "strolling down the yeet",
+        "id": "/home/repo/python-specs"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 62.697911399999995,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 61.28535,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 63.739393,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 64.268793,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cork",
+        "Language": "Node",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 62.354313,
+        "Notes": "Put some FP and async on it",
+        "id": "/home/repo/node-cork"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 164.8,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 167.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 166.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 166.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 165.0,
+        "Notes": "obscure",
+        "id": "/home/repo/javascript-obscure-cco3"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 8.2,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 8.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 8.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 8.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "plusuncold",
+        "Language": "C++",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 8.0,
+        "Notes": "",
+        "id": "/home/repo/cpp-plusuncold"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 78.50822100000414,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 78.80138499999134,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 76.57965900001784,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 78.42341300002431,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Python3",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 77.23709699999404,
+        "Notes": "gotta eat your yeeties!",
+        "id": "/home/repo/python-pard68"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 63.4,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 65.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 64.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 63.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "cco3",
+        "Language": "javascript",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 62.0,
+        "Notes": "sparse arrays",
+        "id": "/home/repo/javascript-cco3"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 20.6197416,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 20.486038,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 20.335787,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 20.684682,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "pard68",
+        "Language": "Rust",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 21.262208,
+        "Notes": "Decomposition",
+        "id": "/home/repo/rust-pard68"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 105.804150390625,
+        "Notes": "ARG: [\"zgpy\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 105.730224609375,
+        "Notes": "ARG: [\"zgpy\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 105.2900390625,
+        "Notes": "ARG: [\"zgpy\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 105.2236328125,
+        "Notes": "ARG: [\"zgpy\"]",
+        "id": "/home/repo/ruby-basking2"
+      },
+      {
+        "Author": "basking2",
+        "Language": "ruby",
+        "Word": "z",
+        "Score": 10,
+        "Time (ms)": 106.6796875,
+        "Notes": "ARG: [\"zgpy\"]",
         "id": "/home/repo/ruby-basking2"
       }
     ]
