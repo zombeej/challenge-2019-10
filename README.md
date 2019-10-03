@@ -16,7 +16,7 @@ Birthed out of our Slack org, The Reformed Devs have begun monthly coding challe
 
 #### Problem
 
-Given a set of *n* letters, what is the highest scoring valid word that you can make using the set? Scoring is based on Scrabble letter point values (see `data/letters.json`). Word validity will be based on a dictionary included in the repo (`data/dictionary.txt`).
+Given a random string of letters whose length is between 4 and 7, inclusive, what is the highest scoring valid word that you can make using the group of letters? Scoring is based on Scrabble letter point values (see `data/letters.json`). Word validity will be based on a dictionary included in the repo (`data/dictionary.txt`).
 
 Inputs will be given as a lowercase string. Dictionary file is all lowercase as well.
 
@@ -26,9 +26,13 @@ Given the input letters `abc` your max score would be 7. A=1, B=3, C=3, and ther
 
 Given the letters `iisq`, your max score would be 10. I=1, S=1, Q=10, and none of the multi letter words that can be formed score higher than just Q itself.
 
+#### Timing
+
+What should be timed? Generally speaking, nearly everything. Historically the following are excluded from your timer: Importing libraries/modules, setting constants, setting test input, printing the solution. Everything else should be inside your timer, including loading the dictionary.
+
 #### Output
 
-Running your solution should output your info in the following format: `username, language, word formed, solution, time in ms, notes`.
+Running your solution should output your info in the following format: `username, language, word formed, score, time in ms, notes`.
 
 Using the first example from above, example output might be: `specs, Python3, cab, 7, 130, these are the notes`.
 
@@ -74,12 +78,19 @@ You can run the container lcoally by running `./run_docker.sh` after building th
 
 You can run the tests locally (assuming you have all the language support installed) by running `python run_tests.py`.
 
-If you only want to run specific directories on a local run (i.e. just test your solution), run `python run_tests.py local comma-separated,list-of,solution-dirs`.
+If you only want to run specific directories on a local run (i.e. just test your solution), run `python run_tests.py comma-separated,list-of,solution-dirs`.
 
 ### Leaderboard
 
-This is where the leaderboard will go.
+__Inputs__: _aogpnnx, kigvvu, flzcxa, cokbfd, bkgi_
 
-### Oops
+Author | Language | Word | Score | Time (ms) | Notes
+--- | --- | --- | --- | --- | ---
+plusuncold | C++ | pax, kivu, zax, bock, big | 12, 11, 19, 12, 6 | 18.4 | 
+specs | Python 3 | pax, kivu, zax, bock, big | 12, 11, 19, 12, 6 | 59.92486328125 | strolling down the yeet
+cork | Node | pax, kivu, zax, bock, big | 12, 11, 19, 12, 6 | 72.25321912000001 | Put some FP and async on it
+cco3 | javascript | pax, kivu, zax, bock, big | 12, 11, 19, 12, 6 | 75.72 | sparse arrays
+zombeej | Node | pax, kivu, zax, bock, big | 12, 11, 19, 12, 6 | 83.76 | hoooo doggy
+basking2 | ruby | pax, kivu, zax, bock, big | 12, 11, 19, 12, 6 | 99.14125 | ARG: ["aogpnnx"]
+pard68 | Python3 | pox, kivu, zax, bock, big | 12, 11, 19, 12, 6 | 126.47911236000141 | gotta eat your yeeties!
 
-If someone offers an incorrect solution, it will get posted here when the test suite is run.
