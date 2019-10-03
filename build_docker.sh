@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t challenge-2019-09:latest .
+docker build -t challenge-2019-10:latest .

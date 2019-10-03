@@ -1,4 +1,5 @@
 from collections import Mapping
+from collections import OrderedDict
 import json
 import os
 import random
@@ -14,9 +15,9 @@ DIR = os.path.abspath(os.path.dirname(__file__))
 def get_test_dirs():
     # get the list of directories to run tests on
     #  if provided on the command line
-    if len(sys.argv) > 2:
+    if len(sys.argv) > 1:
         return [
-            d for d in sys.argv[2].split(',')
+            d for d in sys.argv[1].split(',')
             if '-' in d and len(d.split('-')) == 2
         ]
     # else get all of em
@@ -30,24 +31,11 @@ def get_test_dirs():
 
 
 def get_readme_path():
-    # set README location
-    # if commandline arg is docker
-    if len(sys.argv) > 1 and sys.argv[1] == 'docker':
-        return '/tmp/repo/README.md'
-    # else local
-    else:
-        return os.path.join(DIR, 'README.md')
+    return os.path.join(DIR, 'README.md')
 
 
 def get_json_path():
-    # set README location
-    # if commandline arg is docker
-    if len(sys.argv) > 1 and sys.argv[1] == 'docker':
-        return '/tmp/repo/results.json'
-    # else local
-    else:
-        return os.path.join(DIR, 'results.json')
-
+    return os.path.join(DIR, 'test_results.json')
 
 
 def get_config():
@@ -77,18 +65,16 @@ def get_solution(s=None):
         return str(s)
 
 
+def get_dictionary():
+    with open(os.path.join(DIR, 'data', 'dictionary.txt')) as f:
+        words = [w.strip() for w in f.readlines() if len(w.strip()) <= 7]
+
+    return words
+
+
 def get_letters():
     with open(os.path.join(DIR, 'data', 'letters.json')) as f:
-        letters = json.load(f)
-
-    return letters
-
-
-def get_words():
-    with open(os.path.join(DIR, 'data', 'dictionary.txt')) as f:
-        words = f.read()
-
-    return words.splitlines()
+        return json.load(f)
 
 
 # Set contants
@@ -101,60 +87,30 @@ SOLUTION_FIELD = CONFIG.get('leaderboard', {}).get('solutionField', 'Solution')
 RANKING_FIELD = CONFIG.get('leaderboard', {}).get('rankingField', 'Time')
 FIELDS = CONFIG.get('leaderboard', {}).get('fields', [])
 OOPS_FIELDS = CONFIG.get('oops', {}).get('fields', [])
+WORDS = get_dictionary()
 LETTERS = get_letters()
-WORDS = get_words()
 
 
 def build_test(d):
     if os.path.isfile(os.path.join(d, 'build.sh')):
-        os.system('cd {} && bash build.sh'.format(d))
+        os.system(f'cd {d} && bash build.sh')
 
 
-def run_test(d, test_input):
-    test_out = os.popen(f'cd {d} && bash run.sh {test_input}').read()
+def run_test(d, test_case):
+    test_out = os.popen(f'cd {d} && bash run.sh {test_case}').read().strip()
     print(f'    {test_out}')
-    return test_out
+    return parse_result(test_out)
 
 
-def transform_results(results):
-    fields = CONFIG.get('leaderboard', {}).get('fields', [])
-    temp_results = []
-    for r in results:
-        temp = {}
-        for i, val in enumerate(r.replace('\n', '').split(',')):
-            temp[fields[i]] = val.strip()
-            if fields[i] == SOLUTION_FIELD:
-                temp[SOLUTION_FIELD] = get_solution(temp[SOLUTION_FIELD])
-            if fields[i] == RANKING_FIELD:
-                temp[RANKING_FIELD] = float(temp[RANKING_FIELD])
-        temp_results.append(temp)
-    
-    return temp_results
-
-    # correct = [r for r in temp_results if r[SOLUTION_FIELD] == SOLUTION]
-    # incorrect = [r for r in temp_results if r[SOLUTION_FIELD] != SOLUTION]
-    # if correct:
-    #     avg = sum(c[RANKING_FIELD] for c in correct) / len(correct)
-    #     correct = correct[0]
-    #     correct[RANKING_FIELD] = avg
-
-    # if incorrect:
-    #     solutions = ','.join([i[SOLUTION_FIELD] for i in incorrect])
-    #     incorrect = incorrect[0]
-    #     incorrect[SOLUTION_FIELD] = solutions
-
-    # return correct, incorrect
-
-
-def get_test_results(d, test_input):
-    print('Building {}...'.format(d))
+def get_test_results(d, test_case):
+    print(f'\nBuilding {d}...')
     build_test(d)
     results = []
-    print('Running {}...'.format(d))
+    print(f'Running {d} with test input: {test_case} ...')
     for _ in range(CONFIG.get('testCount', 1)):
-        results.append(run_test(d, test_input))
+        results.append(run_test(d, test_case))
 
-    return transform_results(results)
+    return results
 
 
 def get_readme():
@@ -165,7 +121,7 @@ def get_readme():
         if readme:
             return readme
 
-    raise Exception('No README file found at path: {}'.format(README))
+    raise Exception(f'No README file found at path: {README}')
 
 
 def write_readme(readme):
@@ -173,7 +129,7 @@ def write_readme(readme):
         with open(README, 'w') as f:
             f.write(readme)
     else:
-        raise Exception('No README file found at path: {}'.format(README))
+        raise Exception(f'No README file found at path: {README}')
 
 
 def strip_current_results(readme):
@@ -215,7 +171,11 @@ def data_to_md_table(data, ordered_fields, title=None, sort_field=None,
 
     out = header + div + data + '\n\n'
     if extra:
-        out = f'{extra}\n\n{out}'
+        if not extra.endswith('\n\n'):
+            extra += '\n\n'
+
+        out = extra + out
+
     if title:
         if not title.endswith('\n\n'):
             title += '\n\n'
@@ -225,28 +185,37 @@ def data_to_md_table(data, ordered_fields, title=None, sort_field=None,
     return out
 
 
-def update_readme(correct, incorrect, inputs):
+def update_readme(inputs, correct, incorrect):
+    inputs = ', '.join(inputs)
     readme = get_readme()
     readme = strip_current_results(readme)
 
     if correct:
-        extra = 'Inputs: _{}_'.format(', '.join(inputs))
-        readme += data_to_md_table(correct, FIELDS, title='### Leaderboard',
+        fields = list(correct[0].keys())
+        extra = f'__Inputs__: _{inputs}_'
+        readme += data_to_md_table(correct, fields, title='### Leaderboard',
                                    sort_field=RANKING_FIELD, extra=extra)
 
     if incorrect:
-        extra = 'Inputs: _{}_'.format(', '.join(inputs))
-        readme += data_to_md_table(incorrect, OOPS_FIELDS, title='### Oops',
-                                   extra=extra)
+        fields = list(incorrect[0].keys())
+        readme += data_to_md_table(incorrect, fields, title='### Oops')
 
     write_readme(readme)
+
+
+def run_test_set(test_case):
+    results = []
+    for d in TEST_DIRS:
+        results += get_test_results(d, test_case)
+
+    return results
 
 
 def get_random_letters():
     with open(os.path.join(DIR, 'data', 'letters.json')) as f:
         letters = json.load(f)
 
-    word_length = random.randint(4, 10)
+    word_length = random.randint(4, 7)
     word = ''
 
     while len(word) < word_length:
@@ -262,76 +231,140 @@ def get_random_letters():
         return word
 
 
-def sort_results(results, letters_in):
-    for r in results:
-        r.update({'input': letters_in})
-    correct = []
-    incorrect = []
-    temp_correct = []
-    results = sorted(results, key=lambda k: k[SOLUTION_FIELD], reverse=True)
-
-
-    for r in results:
-        if r[SOLUTION_FIELD] != results[0][SOLUTION_FIELD]:
-            incorrect.append(r)
-        else:
-            temp_correct.append(r)
-
-    for r in temp_correct:
-        if r['Word'] not in WORDS:
-            incorrect.append(r)
-        elif not validate_score(r['Word'], r[SOLUTION_FIELD]):
-            incorrect.append(r)
-        else:
-            correct.append(r)
-
-    c_out = {}
-    for c in correct:
-        a = c.pop('Author')
-        if a not in c_out:
-            c_out[a] = []
-
-        c_out[a].append(c)
-
-    i_out = {}
-    for i in incorrect:
-        a = i.pop('Author')
-        if a not in i_out:
-            i_out[a] = []
-
-        i_out[a].append(i)
-
-    return c_out, i_out
-
-
-def validate_score(word, score):
-    calc = sum(LETTERS.get(l, {}).get('score', 0) for l in word)
-    return score == calc
-
-
-def dump_results(results):
+def dump_json_results(results):
+    print('\nDumping  test_results.json...')
     with open(JSON, 'w') as f:
         json.dump(results, f, indent=2)
 
 
-if __name__ == '__main__':
-    master_results = {}
-    for _ in range(5):
-        letters_in = get_random_letters()
-        master_results[letters_in] = {}
-        results = []
-        for d in TEST_DIRS:
-            results += get_test_results(d, letters_in)
-        
-        correct, incorrect = sort_results(results, letters_in)
-        if correct:
-            master_results[letters_in]['correct'] = correct
-        if incorrect:
-            master_results[letters_in]['incorrect'] = incorrect
+def parse_result(result):
+    result = [r.strip() for r in result.split(',')]
+    out = OrderedDict()
+    for i, f in enumerate(FIELDS):
+        v = result[i]
+        if f == SOLUTION_FIELD:
+            v = get_solution(v)
+        elif f == RANKING_FIELD:
+            v = float(v)
 
-    print('Dumping results.json...')
-    dump_results(master_results)
-    # # need to then rank and update
-    # print('Updating README.md...')
-    # update_readme(correct, incorrect, list(master_results.keys()))
-    print('Done')
+        out[f] = v
+
+    return out
+
+
+def dict_check(word):
+    return word in WORDS
+
+
+def score_check(word, score):
+    calc = sum(LETTERS.get(l, {}).get('score', 0) for l in word)
+    return score == calc
+
+
+def split_results(results):
+    results = sorted(results, key=lambda k: k['Score'], reverse=True)
+    correct = []
+    incorrect = []
+    top_score = None
+    for r in results:
+        if not dict_check(r['Word']) or not score_check(r['Word'], r['Score']):
+            incorrect.append(r)
+        elif top_score and r['Score'] != top_score:
+            incorrect.append(r)
+        elif not top_score:
+            correct.append(r)
+            top_score = r['Score']
+        else:
+            correct.append(r)
+
+    return correct, incorrect
+
+
+def consolidate_corrects(results):
+    out = OrderedDict()
+    all_c = []
+    for k, v in results.items():
+        all_c += v
+
+    users = set([x['Author'] for x in all_c])
+    for case, result in results.items():
+        temp = []
+        for u in users:
+            match = [r for r in result if r['Author'] == u]
+            if match:
+                t = match[0]
+                t['Time (ms)'] = \
+                    sum(m['Time (ms)'] for m in match) / len(match)
+            else:
+                t = OrderedDict([
+                    ('Author', u),
+                    ('Word', ' '),
+                    ('Score', 0),
+                    ('Time (ms)', max(r['Time (ms)'] for r in result)),
+                    ('Notes','Max time penalty applied')
+                ])
+            temp.append(t)
+        out[case] = sorted(temp, key=lambda k: k['Time (ms)'])
+
+    all_c = []
+    for k, v in out.items():
+        all_c += v
+
+    temp = []
+    for u in users:
+        match = [r for r in all_c if r['Author'] == u]
+        t = match[0]
+        t['Word'] = ', '.join(m['Word'] for m in match)
+        t['Score'] = ', '.join(str(m['Score']) for m in match)
+        t['Time (ms)'] = sum(m['Time (ms)'] for m in match) / len(match)
+        temp.append(t)
+
+    out['consolidated'] = sorted(temp, key=lambda k: k['Time (ms)'])
+
+    return out
+
+
+def consolidate_incorrects(results):
+    out = []
+    for case, r_set in results.items():
+        users = set([r['Author'] for r in r_set])
+        for u in users:
+            match = [r for r in r_set if r['Author'] == u]
+            t = OrderedDict([
+                ('Author', u),
+                ('Input', case),
+                ('Words', ', '.join(m['Word'] for m in match)),
+                ('Scores', ', '.join(str(m['Score']) for m in match))
+            ])
+            out.append(t)
+
+    return out
+
+
+if __name__ == '__main__':
+    raw_results = OrderedDict()
+    for _ in range(5):
+        test_case = get_random_letters()
+        results = run_test_set(test_case)
+        raw_results[test_case] = results
+
+    print('\nSorting and calculating rankings...')
+    correct = OrderedDict()
+    incorrect = OrderedDict()
+    for test_case, results in raw_results.items():
+        correct[test_case], incorrect[test_case] = split_results(results)
+
+    correct = consolidate_corrects(correct)
+    incorrect = consolidate_incorrects(incorrect)
+    master_results = OrderedDict([
+        ('Overall Rankings', correct.pop('consolidated')),
+        ('Correct', correct),
+        ('Incorrect', incorrect),
+        ('Raw results', raw_results)
+    ])
+
+    dump_json_results(master_results)
+    print('\nUpdating README.md...')
+    inputs = list(correct.keys())
+    update_readme(inputs, master_results['Overall Rankings'], incorrect)
+    print('\nDone')

@@ -5,4 +5,4 @@ cd $FILE_DIR
 FILE_DIR=$(pwd -P)
 cd $DIR
 
-docker run -it --rm -v $DIR:/tmp/repo challenge-2019-09:latest
+docker run -it --rm -v $DIR:/home/repo challenge-2019-10:latest

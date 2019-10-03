@@ -18,6 +18,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
     php-cli \
     python3 \
     python3-pip \
+    ruby \
+    ruby-bundler \
     rustc
 
 # Install python libraries for run script
@@ -37,6 +39,9 @@ ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 
-COPY . /home/
 ENV LANG=en_US.UTF-8
-ENTRYPOINT python3 /home/run_solutions.py docker
+
+# Run dir
+VOLUME ["/home/repo"]
+WORKDIR /home/repo
+ENTRYPOINT python3 run_solutions.py
