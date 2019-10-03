@@ -8,6 +8,8 @@
 #include <set>
 #include <vector>
 #include <fstream>
+#include <map>
+#include <tuple>
 
 #include "timer.h"
 
@@ -57,37 +59,106 @@ void combinationsNR(string& soFar,
     
 }
 
-void getDictionaryFromFile(short maxWordLength) {
+map<char,short> lettersToMap(char* letters) {
+    short i = 0;
+    map<char,short> lettersMap;
+    char letter = letters[i];;
+    while (letter != NULL) {
+	if (lettersMap.count(letter)) {
+	    lettersMap[letter]++;
+	} else {
+	    lettersMap[letter] = 1;
+	}
+	i++;
+	letter = letters[i];
+    }
+    return lettersMap;
+}
+
+bool lettersCanMadeWord(const string& word,
+			map<char,short>& letters) {
+    const short wordLength = word.size();
+
+    // Deregarding cardinality
+    
+    for (int i = 0 ; i < wordLength ; i++) {
+	if (!letters.count(word[i])) {
+	    return false;
+	}
+    }
+
+    // With regard to cardinality
+    map<char,short> occurrences;
+    for (int i = 0 ; i < wordLength ; i++) {
+	if (occurrences.count(word[i])) {
+	    occurrences[word[i]]++;
+	} else {
+	    occurrences[word[i]] = 1;
+	}
+    }
+
+    for (const auto& letterOccurrence : occurrences) {
+	short occurrence = letterOccurrence.second;
+	if (occurrence == 1) {
+	    continue;
+	}
+
+	// If there are fewer occurrences of the letter in the
+	// input set than the current test word the current
+	// test word cannot be made with the letters
+	if (letters[letterOccurrence.first] < occurrence) {
+	    return false;
+	}
+    }
+
+    return true;
+}
+
+
+tuple<string,short> getDictionaryFromFile(map<char,short> letters) {
     //auto id_read = Timer::timerBegin();
+    short maxWordLength = 0, maxPossibleScore = 0;
+    for (const auto& l : letters) {
+	maxWordLength += l.second;
+	maxPossibleScore += valueForLetter(l.first) * l.second;
+    }
+    
     vector<string> dictVector;
     std::ifstream file;
     file.open("../data/dictionary.txt");
 
-    string word;
+    string word, bestWord;
+    short score, bestScore = 0;
     while(getline(file,word)) {
 	if (word.size() > maxWordLength) { // Word isn't useful if it's over the max word length
 	    continue;
 	}
-	dictVector.push_back(word);
+	score = scoreForVector(word);
+	//cout << word << " " << score << " " << bestScore << endl;
+	if (score > bestScore) {
+	    if (lettersCanMadeWord(word, letters)) {
+		if (score == maxPossibleScore) { // i.e. if all the letters are used
+		    return {word, score};
+		}
+		bestWord = word;
+		bestScore = score;
+	    }
+	}
     }
+    
     //auto time_read = Timer::timerEnd(id_read);
     //auto id_put = Timer::timerBegin();
 
-    dictionary = set<string>(dictVector.begin(), dictVector.end());
     //auto time_put_in_dictionary = Timer::timerEnd(id_put);
     //cout << "id read " << time_read << " id put " << time_put_in_dictionary << endl; exit(0);
+
+    return {bestWord, bestScore};
 }
 
 int main(int argc, char* argv[]) {
     auto id = Timer::timerBegin();
-    string bestWord;
-    string currentGuess;
-    short bestScore = 0;
-    string letters(argv[1]);
-    getDictionaryFromFile(letters.size());
-
-    combinationsNR(currentGuess, letters, bestWord, bestScore);
-
+    string bestWord; short bestScore;
+    tie(bestWord, bestScore) = getDictionaryFromFile(lettersToMap(argv[1]));
     auto time = Timer::timerEnd(id);
     cout << "plusuncold, C++, " << bestWord << ", " << bestScore << ", "
 	      << time / 1000 << "," << endl;
