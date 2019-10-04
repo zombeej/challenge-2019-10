@@ -4,7 +4,7 @@ import time
 
 
 def read_letter_scores(filename='../data/letters.json'):
-    with open(filename, 'r') as letters:
+    with open(filename) as letters:
         return json.loads(letters.read())
 
 
@@ -20,7 +20,7 @@ def is_legal(word, input_letters):
 
 def get_legal_words(tiles, filename='../data/dictionary.txt'):
     limit = len(tiles)
-    with open(filename, 'r') as dictionary:
+    with open(filename) as dictionary:
         parse = [line.strip().replace('-', '') for line in dictionary]
         return [x for x in parse if len(x) <= limit and is_legal(x, tiles)]
 
