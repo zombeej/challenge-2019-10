@@ -8,21 +8,6 @@ from collections import Counter
 scores = (1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10)
 
 
-def get_dict(dictionary='../data/dictionary.txt', length=100):
-	"""
-	Takes a string referencing the location of a text file
-	Optionally takes the length of the letters we're finding a word for
-	Reads that file line by line into a set, removing whitespace
-	"""
-
-	with open(dictionary, 'r') as f:
-		words = set()
-		for line in f:
-			if len(line) <= length + 1:
-				words.add(line.strip())
-	return words
-
-
 def get_values(scores=scores):
 	"""
 	Zips alphabet with scores and returns as a dict
@@ -41,17 +26,34 @@ def tally(word, values):
 	return sum([values[x] for x in word])
 
 
-def find_words(tiles, dictionary):
-	tiles = Counter(tiles)
-	valid_words = []
-	for word in dictionary:
-		if len(tiles) >= len(word) and not (Counter(word) - tiles):
-			valid_words.append(word)
-	return valid_words
+def contains(word, tiles):
+	word = list(word)
+	if [x for x in word if x in tiles] == word:
+		for c in tiles:
+			try:
+				word.remove(c)
+			except:
+				pass
+			if word == []:
+				return True
+	return False
 
 
-def get_highest_scoring(candidates):
-	return sorted(candidates.items(), key=lambda kv: kv[1])[-1]
+def find_best(tiles, dictionary_path='../data/dictionary.txt'):
+	best = 'a'
+	best_score = 0
+	max_length = len(tiles)
+	tiles_comp = list(tiles)
+	values = get_values()
+	with open(dictionary_path, 'r') as f:
+		for line in f:
+			if len(line) <= max_length + 1:
+				word = line.strip()
+				if tally(word, values) > best_score:
+					if contains(word, tiles_comp):
+						best = word
+						best_score = tally(best, values)
+	return best, best_score
 
 
 if __name__ == "__main__":
@@ -64,12 +66,9 @@ if __name__ == "__main__":
 
 	# setup
 	word = sys.argv[1]
-	dictionary = get_dict(length=len(word))
-	values = get_values()
 
 	# DO IT!
-	candidates = {word:tally(word, values) for word in find_words(word, dictionary)}
-	word, value = get_highest_scoring(candidates)
+	word, value = find_best(word)
 
 	# end the timer and return the results
 	end = timer()
