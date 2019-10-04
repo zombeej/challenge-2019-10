@@ -2,7 +2,7 @@ use std::env;
 use std::fs::File;
 use std::io::{prelude::*, BufReader};
 use std::time;
-use hashbrown::HashMap;
+use std::collections::HashMap;
 
 #[derive(Debug)]
 #[derive(Clone)]
@@ -32,7 +32,7 @@ impl Word{
         value
     }
 
-    fn decompose(&self) -> HashMap<char, isize> {
+    fn decompose(&self) -> HashMap<char, u8> {
         let mut decomposed = HashMap::new();
         for c in self.word.chars() {
             *decomposed.entry(c).or_insert(0) += 1;
@@ -42,7 +42,7 @@ impl Word{
 
 }
 
-fn compare(word: &HashMap<char, isize>, compared: HashMap<char, isize>) -> bool {
+fn compare(word: &HashMap<char, u8>, compared: HashMap<char, u8>) -> bool {
     for (k, v) in compared.iter() {
         if let Some(i) = word.get(k) {
             if i - v < 0 {
