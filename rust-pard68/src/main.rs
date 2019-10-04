@@ -32,7 +32,7 @@ impl Word{
         value
     }
 
-    fn decompose(&self) -> HashMap<char, u8> {
+    fn decompose(&self) -> HashMap<char, i32> {
         let mut decomposed = HashMap::new();
         for c in self.word.chars() {
             *decomposed.entry(c).or_insert(0) += 1;
@@ -42,7 +42,7 @@ impl Word{
 
 }
 
-fn compare(word: &HashMap<char, u8>, compared: HashMap<char, u8>) -> bool {
+fn compare(word: &HashMap<char, i32>, compared: HashMap<char, i32>) -> bool {
     for (k, v) in compared.iter() {
         if let Some(i) = word.get(k) {
             if i - v < 0 {
