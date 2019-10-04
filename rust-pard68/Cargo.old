@@ -5,3 +5,4 @@ authors = ["Ian S Pringle <pard@0x44.pw>"]
 edition = "2018"
 
 [dependencies]
+hashbrown = "0.6"
