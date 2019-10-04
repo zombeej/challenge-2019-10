@@ -11,7 +11,6 @@ const body = Object.entries(imap)
   .map(([k, v]) => `(?:${k}.*){${v}}`)
   .join('|')
 const re = new RegExp(`(?:${body})`)
-console.log(re)
 
 const max = fs.readFileSync(__dirname + '/../data/dictionary.txt', 'utf8')
   .split(/\s+/)
