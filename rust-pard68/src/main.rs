@@ -40,34 +40,39 @@ impl Word{
         decomposed
     }
 
-    fn compare(&self, mut compared: HashMap<char, isize>) -> bool {
-        let alphabet: String = "abcdefghijklmnopqrstuvwxyz".to_string();
-        let mut difference = HashMap::new();
-        let mut word = self.decompose();
-        for c in alphabet.chars() {
-            let diff = *word.entry(c).or_insert(0) as isize -
-                *compared.entry(c).or_insert(0) as isize;
-            if diff < 0 {
+}
+
+fn compare(word: &HashMap<char, isize>, compared: HashMap<char, isize>) -> bool {
+    for (k, v) in compared.iter() {
+        if let Some(i) = word.get(k) {
+            if i - v < 0 {
                 return false
             }
-            *difference.entry(c).or_insert(0) = diff;
         }
-        true
+        else {
+            return false
+        }
     }
+    true
 }
 
 fn find_best(path: String, tiles: Word) -> Word {
     let mut best = Word::new("a".to_string());
+    let max = tiles.score();
+    let tiles_decomp = tiles.decompose();
     let file = File::open(path).unwrap();
     let reader = BufReader::new(file);
     for line in reader.lines() {
         let word = Word::new(line.unwrap());
         if word.len() <= tiles.len() {
             if word.score() > best.score() {
-                if tiles.compare(word.decompose()) {
+                if compare(&tiles_decomp, word.decompose()) {
                     best = word;
                 }
             }
+        }
+        if best.score() == max {
+            return best
         }
     }
     best
@@ -75,8 +80,7 @@ fn find_best(path: String, tiles: Word) -> Word {
 
 fn main() {
     let start = time::Instant::now();
-    let tiles = Word::new(env::args().nth(1).unwrap().to_string());
-    let best = find_best("../data/dictionary.txt".to_string(), tiles);
+    let best = find_best("../data/dictionary.txt".to_string(), Word::new(env::args().nth(1).unwrap().to_string()));
     let elapsed = start.elapsed();
     let ms = ((elapsed.as_secs() as f64) + (elapsed.subsec_nanos() as f64 / 1_000_000_000.0)) * 1000.0;
     println!("pard68, Rust, {}, {}, {}, Decomposition", best.word, best.score(), ms)
