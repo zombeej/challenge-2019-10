@@ -53,6 +53,6 @@ fn main() {
     let best = find_best("../data/dictionary.txt".to_string(), env::args().nth(1).unwrap().to_string());
     let elapsed = start.elapsed();
     let ms = ((elapsed.as_secs() as f64) + (elapsed.subsec_nanos() as f64 / 1_000_000_000.0)) * 1000.0;
-    println!("pard68, Rust, {}, {}, {}, Decomposition", &best, value_of(&best), ms)
+    println!("pard68, Rust, {}, {}, {}, Give me `iter()` or give me death", &best, value_of(&best), ms)
 }
 
