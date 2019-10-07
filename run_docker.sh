@@ -13,4 +13,4 @@ FILE_DIR=$(pwd -P)
 cd $DIR
 
 # run the container, mount the source dir into the container
-docker run -it --rm -v $FILE_DIR:/home/repo drewpearce/trd-challenge:2019.10
+docker run -it --rm -v $FILE_DIR:/home/repo drewpearce/trd-challenge:2019.10.1
