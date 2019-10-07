@@ -88,18 +88,28 @@ If you only want to run specific directories on a local run (i.e. just test your
 
 ### Leaderboard
 
-__Inputs__: _khmcsy, awmbwza, ctenkbo, pdiso, nvtvwi_
+__Test timestamp__: 2019-10-07T21:42
+
+__Inputs__: _cdeodrw, fmsya, enzkxc, aqpvhzi, yyhrj_
 
 Author | Language | Word | Score | Time (ms) | Notes
 --- | --- | --- | --- | --- | ---
-plusuncold | C++ | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 8.040000000000001 | 
-pard68 | Rust | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 39.47611816 | Decomposition
-cork | Node | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 63.59243048 | Put some FP and async on it
-cco3 | javascript | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 65.08 | sparse arrays
-zombeej | Node | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 74.0 | hoooo doggy
-specs | Python 3 | sky, maza, beckon, pod, vint | 10, 15, 14, 6, 7 | 77.45537109375 | strolling down the yeet
-Kyle Nweeia | Python 3 | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 101.28510688000127 | 
-basking2 | ruby | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 107.12933593749999 | ARG: ["khmcsy"]
-cco3 | javascript | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 162.44 | obscure
-pard68 | Python3 | sky, maza, beckon, pod, vint | 10, 15, 14, 6, 7 | 263.31069891999925 | gotta eat your yeeties!
+plusuncold | C++ | crowded, fay, knez, phiz, hy | 14, 9, 17, 18, 8 | 6.640000000000001 | 
+cco3 | javascript | crowded, fay, knez, phiz, j | 14, 9, 17, 18, 8 | 67.24000000000001 | sparse arrays
+cork | Node | crowded, fay, knez, phiz, hy | 14, 9, 17, 18, 8 | 67.88016400000001 | Put some FP and async on it
+zombeej | Node | hy | 8 | 68.6 | small gainz at 10/7/2019
+pard68 | Python3 | crowded, fay, knez, phiz, hy | 14, 9, 17, 18, 8 | 73.75664304000225 | snek can snek into snek
+specs | Python 3 | crowded, fay, knez, phiz, j | 14, 9, 17, 18, 8 | 81.51310546875001 | strolling down the yeet
+Kyle Nweeia | Python 3 | crowded, fay, knez, phiz, hy | 14, 9, 17, 18, 8 | 104.24434604000069 | 
+basking2 | ruby | crowded, fay, knez, phiz, hy | 14, 9, 17, 18, 8 | 110.1649609375 | ARG: ["cdeodrw"]
+cco3 | javascript | crowded, fay, knez, phiz, hy | 14, 9, 17, 18, 8 | 166.60000000000002 | obscure
+
+### Oops
+
+ID | Input | Words | Scores
+--- | --- | --- | ---
+node-zombeej | cdeodrw | dew, dew, dew, dew, dew | 7, 7, 7, 7, 7
+node-zombeej | fmsya | yam, yam, yam, yam, yam | 8, 8, 8, 8, 8
+node-zombeej | enzkxc | zen, zen, zen, zen, zen | 12, 12, 12, 12, 12
+node-zombeej | aqpvhzi | zipa, zipa, zipa, zipa, zipa | 15, 15, 15, 15, 15
 
