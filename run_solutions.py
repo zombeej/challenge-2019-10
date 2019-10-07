@@ -200,7 +200,7 @@ def update_readme(inputs, correct, incorrect, c_exclude=None):
                     except Exception:
                         print(f'Cannot remove {f} from fields.')
             
-        extra = f'Test timestamp: {TEST_START}\n\n__Inputs__: _{inputs}_'
+        extra = f'__Test timestamp__: {TEST_START}\n\n__Inputs__: _{inputs}_'
         readme += data_to_md_table(correct, fields, title='### Leaderboard',
                                    sort_field=RANKING_FIELD, extra=extra)
 
