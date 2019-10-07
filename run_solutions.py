@@ -249,7 +249,7 @@ def parse_result(result, identifier=None):
     result = [r.strip() for r in result.split(',')]
     out = OrderedDict()
     for i, f in enumerate(FIELDS):
-        v = result[i]
+        v = result[i] if i < len(result) else None
         if f == SOLUTION_FIELD:
             v = get_solution(v)
         elif f == RANKING_FIELD:
