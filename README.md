@@ -1,6 +1,6 @@
 # The Reformed Devs Monthly Challenge
 
-## Month Year
+## October 2019
 
 ### Background
 
@@ -63,34 +63,43 @@ See the `example` directory for more guidance.
 
 ### Running the Tests (I.e. Docker and Stuff)
 
-The Docker image currently supports these languages:
+The Docker image is now moved to its own repo and is hosted on Dockerhub.
+
+* [Source](https://github.com/ReformedDevs/challenge-docker)
+* [Dockerhub](https://hub.docker.com/r/drewpearce/trd-challenge)
+
+The image tagged 2019.10 currently supports these languages:
 
 * C/C++
-* Python 3.6
-* Go 1.12.8
-* Rust
 * Node 11
-* PHP 7.2
+* Python 3.6
+* Ruby
+* Rust
+
+If you want to add support for another language, you can make a PR to the Source repo referenced above. If you need help, come on over to the #monthly-challenge channel on our Slack.
 
 You can build the container locally by running `./build_docker.sh`.
 
 You can run the container lcoally by running `./run_docker.sh` after building the container.
 
-You can run the tests locally (assuming you have all the language support installed) by running `python run_tests.py`.
+You can run the tests locally (assuming you have all the language support installed) by running `python(3) run_solutions.py`.
 
-If you only want to run specific directories on a local run (i.e. just test your solution), run `python run_tests.py comma-separated,list-of,solution-dirs`.
+If you only want to run specific directories on a local run (i.e. just test your solution), run `python(3) run_solutions.py comma-separated,list-of,solution-dirs`.
 
 ### Leaderboard
 
-__Inputs__: _qazvl, jtlektg, bsupz, oczigwt, rmbihn_
+__Inputs__: _khmcsy, awmbwza, ctenkbo, pdiso, nvtvwi_
 
 Author | Language | Word | Score | Time (ms) | Notes
 --- | --- | --- | --- | --- | ---
-plusuncold | C++ | laz, jet, suz, zoic, binh | 12, 10, 12, 15, 9 | 13.12 | 
-cork | Node | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 65.04110972 | initial run - no optimizations
-cco3 | javascript | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 66.91999999999999 | sparse arrays
-specs | Python 3 | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 78.31647460937499 | strolling down the yeet
-zombeej | Node | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 92.92 | hoooo doggy
-basking2 | ruby | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 108.02380859375 | ARG: ["qazvl"]
-pard68 | Python3 | laz, jet, suz, wiz, binh | 12, 10, 12, 15, 9 | 184.2138212000009 | gotta eat your yeeties!
+plusuncold | C++ | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 8.040000000000001 | 
+pard68 | Rust | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 39.47611816 | Decomposition
+cork | Node | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 63.59243048 | Put some FP and async on it
+cco3 | javascript | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 65.08 | sparse arrays
+zombeej | Node | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 74.0 | hoooo doggy
+specs | Python 3 | sky, maza, beckon, pod, vint | 10, 15, 14, 6, 7 | 77.45537109375 | strolling down the yeet
+Kyle Nweeia | Python 3 | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 101.28510688000127 | 
+basking2 | ruby | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 107.12933593749999 | ARG: ["khmcsy"]
+cco3 | javascript | sky, maza, beckon, dip, twin | 10, 15, 14, 6, 7 | 162.44 | obscure
+pard68 | Python3 | sky, maza, beckon, pod, vint | 10, 15, 14, 6, 7 | 263.31069891999925 | gotta eat your yeeties!
 

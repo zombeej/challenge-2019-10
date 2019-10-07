@@ -1,70 +1,19 @@
 const USERNAME = 'cork'
       LANGUAGE = 'Node'
-      NOTES = 'initial run - no optimizations'
+      NOTES = 'Put some FP and async on it'
 
 const fs = require('fs')
+      util = require('util')
       path = require('path')
       readline = require('readline')
-      stream = require('stream')
+      readFile = util.promisify(fs.readFile)
 
 const dataPath = path.join(__dirname, '..', 'data')
       INPUT = process.argv[2] || null
 
-const readJSONFile = path => {
-  const data = fs.readFileSync(path)
+const readJSONFile = async filePath => {
+  const data = await readFile(filePath)
   return JSON.parse(data)
-}
-
-const scoreWord = word => {
-  let score = word.split('')
-    .map(letter => {
-      return lettersDict[letter].score
-    })
-    .reduce((a, b) => {
-      return a + b
-    })
-
-  if (score > topScoringWord.score) {
-    topScoringWord = { score: score, word: word }
-  }
-}
-
-const writeOutput = () => {
-  const END_TIME = process.hrtime.bigint()
-  const EXECUTION_TIME = parseInt(END_TIME - START_TIME) / 1000000
-
-  const OUTPUTS = [
-    USERNAME,
-    LANGUAGE,
-    topScoringWord.word,
-    topScoringWord.score,
-    EXECUTION_TIME,
-    NOTES]
-
-  console.log(OUTPUTS.join(', '))
-}
-
-const START_TIME = process.hrtime.bigint()
-
-let topScoringWord = { score: 0, word: null }
-
-// Synchronous fileRead - is blocking
-const lettersDict = readJSONFile(dataPath + '/letters.json')
-
-const inputStream = fs.createReadStream(dataPath + '/dictionary.txt')
-      outputStream = new stream()
-      reader = readline.createInterface({
-        input: inputStream,
-        output: outputStream
-      })
-
-const isInvalidWord = word => {
-  const invalidCharRegex = RegExp(`[^${INPUT}]`)
-  return invalidCharRegex.test(word)
-}
-
-const isTooLongWord = word => {
-  return word.length > INPUT.length
 }
 
 const getLetterCount = str => {
@@ -74,8 +23,8 @@ const getLetterCount = str => {
   }, {})
 }
 
-const isTooManyLetters = word => {
-  const maxCount = getLetterCount(INPUT)
+const isTooManyLetters = (word, input) => {
+  const maxCount = getLetterCount(input)
   const letterCount = getLetterCount(word)
   const letters = Object.keys(letterCount)
 
@@ -88,14 +37,56 @@ const isTooManyLetters = word => {
   return false
 }
 
-reader.on('line', line => {
-  if (isTooLongWord(line)) { return }
-  if (isInvalidWord(line)) { return }
-  if (isTooManyLetters(line)) { return }
+const scoreWord = (word, dict, minScore) => {
+  let score = word.split('')
+    .map(letter => {
+      return dict[letter].score
+    })
+    .reduce((a, b) => {
+      return a + b
+    })
 
-  scoreWord(line)
-})
+  return { score: score, word: word }
+}
 
-reader.on('close', () => {
-  writeOutput()
-})
+const writeOutput = (winner) => {
+  const END_TIME = process.hrtime.bigint()
+  const EXECUTION_TIME = parseInt(END_TIME - START_TIME) / 1000000
+
+  const OUTPUTS = [
+    USERNAME,
+    LANGUAGE,
+    winner.word,
+    winner.score,
+    EXECUTION_TIME,
+    NOTES]
+
+  console.log(OUTPUTS.join(', '))
+}
+
+const getBestWord = async inputLetters => {
+  const inputStream = fs.createReadStream(dataPath + '/dictionary.txt')
+        reader = readline.createInterface({ input: inputStream })
+        invalidCharRegex = RegExp(`[^${INPUT}]`)
+
+  const lettersDict = await readJSONFile(dataPath + '/letters.json')
+
+  let topWord = { score: 0, word: null }
+
+  reader.on('line', line => {
+    if (line.length > inputLetters.length) return
+    if (invalidCharRegex.test(line)) return
+    if (isTooManyLetters(line, inputLetters)) return
+
+    const contender = scoreWord(line, lettersDict, topWord.score)
+    if (contender.score > topWord.score) { topWord = contender }
+  })
+
+  reader.on('close', () => {
+    writeOutput(topWord)
+  })
+}
+
+const START_TIME = process.hrtime.bigint()
+
+getBestWord(INPUT)
