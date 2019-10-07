@@ -65,5 +65,5 @@ readInterface.on('close', () => {
 
 function  printResult () {
   const time = Date.now() - START
-  console.log(`zombeej, Node, ${bestword[0]}, ${bestword[1]}, ${time}, small gainz`)
+  console.log(`zombeej, Node, ${bestword[0]}, ${bestword[1]}, ${time}, small gainz at ${new Date().toLocaleString()}`)
 }
