@@ -1,5 +1,6 @@
 from collections import Mapping
 from collections import OrderedDict
+from datetime import datetime
 import json
 import os
 import random
@@ -85,6 +86,7 @@ FIELDS = CONFIG.get('leaderboard', {}).get('fields', [])
 OOPS_FIELDS = CONFIG.get('oops', {}).get('fields', [])
 WORDS = get_dictionary()
 LETTERS = get_letters()
+TEST_START = datetime.now().isoformat(timespec='minutes')
 
 
 def build_test(d):
@@ -95,7 +97,7 @@ def build_test(d):
 def run_test(d, test_case):
     test_out = os.popen(f'cd {d} && bash run.sh {test_case}').read().strip()
     print(f'    {test_out}')
-    return parse_result(test_out, identifier=d)
+    return parse_result(test_out, identifier=d.split('/')[-1])
 
 
 def get_test_results(d, test_case):
@@ -198,7 +200,7 @@ def update_readme(inputs, correct, incorrect, c_exclude=None):
                     except Exception:
                         print(f'Cannot remove {f} from fields.')
             
-        extra = f'__Inputs__: _{inputs}_'
+        extra = f'Test timestamp: {TEST_START}\n\n__Inputs__: _{inputs}_'
         readme += data_to_md_table(correct, fields, title='### Leaderboard',
                                    sort_field=RANKING_FIELD, extra=extra)
 
@@ -323,7 +325,7 @@ def consolidate_corrects(results, identifier=None):
 
     temp = []
     for i in ids:
-        match = [r for r in all_c if r[identifier] == i]
+        match = [r for r in all_c if r.get(identifier) == i]
         t = match[0]
         t['Word'] = ', '.join(m['Word'] for m in match)
         t['Score'] = ', '.join(str(m['Score']) for m in match)
