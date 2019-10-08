@@ -88,28 +88,21 @@ If you only want to run specific directories on a local run (i.e. just test your
 
 ### Leaderboard
 
-__Test timestamp__: 2019-10-07T21:42
+__Test timestamp__: 2019-10-08T13:35
 
-__Inputs__: _cdeodrw, fmsya, enzkxc, aqpvhzi, yyhrj_
+__Inputs__: _afgwd, rxsju, mnid, dwabjbo, ybehdnc_
 
 Author | Language | Word | Score | Time (ms) | Notes
 --- | --- | --- | --- | --- | ---
-plusuncold | C++ | crowded, fay, knez, phiz, hy | 14, 9, 17, 18, 8 | 6.640000000000001 | 
-cco3 | javascript | crowded, fay, knez, phiz, j | 14, 9, 17, 18, 8 | 67.24000000000001 | sparse arrays
-cork | Node | crowded, fay, knez, phiz, hy | 14, 9, 17, 18, 8 | 67.88016400000001 | Put some FP and async on it
-zombeej | Node | hy | 8 | 68.6 | small gainz at 10/7/2019
-pard68 | Python3 | crowded, fay, knez, phiz, hy | 14, 9, 17, 18, 8 | 73.75664304000225 | snek can snek into snek
-specs | Python 3 | crowded, fay, knez, phiz, j | 14, 9, 17, 18, 8 | 81.51310546875001 | strolling down the yeet
-Kyle Nweeia | Python 3 | crowded, fay, knez, phiz, hy | 14, 9, 17, 18, 8 | 104.24434604000069 | 
-basking2 | ruby | crowded, fay, knez, phiz, hy | 14, 9, 17, 18, 8 | 110.1649609375 | ARG: ["cdeodrw"]
-cco3 | javascript | crowded, fay, knez, phiz, hy | 14, 9, 17, 18, 8 | 166.60000000000002 | obscure
-
-### Oops
-
-ID | Input | Words | Scores
---- | --- | --- | ---
-node-zombeej | cdeodrw | dew, dew, dew, dew, dew | 7, 7, 7, 7, 7
-node-zombeej | fmsya | yam, yam, yam, yam, yam | 8, 8, 8, 8, 8
-node-zombeej | enzkxc | zen, zen, zen, zen, zen | 12, 12, 12, 12, 12
-node-zombeej | aqpvhzi | zipa, zipa, zipa, zipa, zipa | 15, 15, 15, 15, 15
+plusuncold | C++ | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 16.32 | 
+pard68 | Rust | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 32.531223999999995 | Give me `iter()` or give me death
+pard68 | Python3 | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 88.26212798245251 | snek can snek into snek
+zombeej | Node | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 94.24000000000001 | small gainz at 10/8/2019
+cork | Node | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 94.607516 | Put some FP and async on it
+cco3 | javascript | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 100.76 | sparse arrays
+specs | Python 3 | wafd, rux, mind, jaw, benchy | 11, 10, 7, 13, 16 | 102.839814453125 | strolling down the yeet
+specs | Python 3 | wafd, rux, mind, jaw, benchy | 11, 10, 7, 13, 16 | 105.984208984375 | strolling down the yeet
+basking2 | ruby | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 119.96484375 | ARG: ["afgwd"]
+Kyle Nweeia | Python 3 | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 124.45389199256897 | 
+cco3 | javascript | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 187.88 | obscure
 

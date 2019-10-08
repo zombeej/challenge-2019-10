@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cargo build --release
+$HOME/.cargo/bin/cargo build --release
