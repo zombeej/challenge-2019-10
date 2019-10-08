@@ -9,13 +9,15 @@ const ALPHA = 'abcdefghijklmnopqrstuvwxyz'.split('')
 const START = Date.now()
 
 const readInterface = readline.createInterface({
-  input: fs.createReadStream(WORDS),
+  input: fs.createReadStream(WORDS, {flags: 'r'}),
   console: false
 })
 
 const lastletter = LETTERS.reduce((agg, l) => {
   return Math.max(agg, ALPHA.indexOf(l))
 }, 0)
+
+// console.log('last letter is', lastletter, ALPHA[lastletter])
 
 let bestword = ['', 0]
 let skipper = ''
@@ -29,7 +31,7 @@ function checkWord (word) {
     const l = word[w]
     const i = ck.indexOf(l)
     if (i < 0) {
-      skipper = l
+      if (w === 0) { skipper = l }
       break
     } else {
       ck.splice(i, 1)
@@ -47,7 +49,9 @@ function checkWord (word) {
 
 readInterface.on('line', line => {
   if (found) { return }
-  if (line[0] === skipper) { return }
+  if (line[0] === skipper) {
+    return
+  }
   if (ALPHA.indexOf(line[0]) > lastletter) {
     found = true
     printResult()
