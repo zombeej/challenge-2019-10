@@ -88,21 +88,20 @@ If you only want to run specific directories on a local run (i.e. just test your
 
 ### Leaderboard
 
-__Test timestamp__: 2019-10-08T13:35
+__Test timestamp__: 2019-10-08T13:54
 
-__Inputs__: _afgwd, rxsju, mnid, dwabjbo, ybehdnc_
+__Inputs__: _hdai, inerl, morqu, nhywc, uffvtd_
 
 Author | Language | Word | Score | Time (ms) | Notes
 --- | --- | --- | --- | --- | ---
-plusuncold | C++ | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 16.32 | 
-pard68 | Rust | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 32.531223999999995 | Give me `iter()` or give me death
-pard68 | Python3 | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 88.26212798245251 | snek can snek into snek
-zombeej | Node | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 94.24000000000001 | small gainz at 10/8/2019
-cork | Node | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 94.607516 | Put some FP and async on it
-cco3 | javascript | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 100.76 | sparse arrays
-specs | Python 3 | wafd, rux, mind, jaw, benchy | 11, 10, 7, 13, 16 | 102.839814453125 | strolling down the yeet
-specs | Python 3 | wafd, rux, mind, jaw, benchy | 11, 10, 7, 13, 16 | 105.984208984375 | strolling down the yeet
-basking2 | ruby | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 119.96484375 | ARG: ["afgwd"]
-Kyle Nweeia | Python 3 | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 124.45389199256897 | 
-cco3 | javascript | wafd, jur, mind, jaob, benchy | 11, 10, 7, 13, 16 | 187.88 | obscure
+plusuncold | C++ | dhai, liner, quo, why, duff | 8, 5, 12, 12, 11 | 5.56 | 
+pard68 | Rust | dhai, liner, quo, why, duff | 8, 5, 12, 12, 11 | 13.920847880000002 | Give me `iter()` or give me death
+pard68 | Python3 | dhai, liner, quo, why, duff | 8, 5, 12, 12, 11 | 49.54075807999914 | snek can snek into snek
+cco3 | javascript | dhai, liner, quo, why, duff | 8, 5, 12, 12, 11 | 63.8 | sparse arrays
+cork | Node | dhai, liner, quo, why, duff | 8, 5, 12, 12, 11 | 63.8421604 | Put some FP and async on it
+zombeej | Node | dhai, liner, quo, why, duff | 8, 5, 12, 12, 11 | 72.76000000000002 | small gainz at 10/8/2019
+specs | Python 3 | dhai, liner, quo, why, duff | 8, 5, 12, 12, 11 | 96.97626953125 | strolling down the yeet
+Kyle Nweeia | Python 3 | dhai, liner, quo, why, duff | 8, 5, 12, 12, 11 | 101.32387483999949 | 
+basking2 | ruby | dhai, liner, quo, why, duff | 8, 5, 12, 12, 11 | 106.752978515625 | ARG: ["hdai"]
+cco3 | javascript | dhai, liner, quo, why, duff | 8, 5, 12, 12, 11 | 161.28000000000003 | obscure
 
