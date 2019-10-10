@@ -6,7 +6,7 @@ const VALUES = require('../data/letters')
 const WORDS = '../data/dictionary.txt'
 const ALPHA = 'abcdefghijklmnopqrstuvwxyz'.split('')
 
-const START = Date.now()
+const START = process.hrtime()
 
 const readInterface = readline.createInterface({
   input: fs.createReadStream(WORDS, {flags: 'r'}),
@@ -32,7 +32,7 @@ function checkWord (word) {
     const i = ck.indexOf(l)
     if (i < 0) {
       if (w === 0) { skipper = l }
-      break
+      return
     } else {
       ck.splice(i, 1)
       total = total + VALUES[l].score 
@@ -49,6 +49,7 @@ function checkWord (word) {
 
 readInterface.on('line', line => {
   if (found) { return }
+  if (line.length > LETTERS.length) { return }
   if (line[0] === skipper) {
     return
   }
@@ -58,7 +59,6 @@ readInterface.on('line', line => {
     readInterface.close()
     return
   }
-  if (line.length > LETTERS.length) { return }
   checkWord(line)
 })
 
@@ -68,6 +68,6 @@ readInterface.on('close', () => {
 })
 
 function  printResult () {
-  const time = Date.now() - START
-  console.log(`zombeej, Node, ${bestword[0]}, ${bestword[1]}, ${time}, small gainz at ${new Date().toLocaleString()}`)
+  const time = process.hrtime(START)
+  console.log(`zombeej, Node, ${bestword[0]}, ${bestword[1]}, ${time[1] / 1000000}, aannngggeerrrr`)
 }
